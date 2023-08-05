@@ -1,6 +1,7 @@
 body {
     margin: 0%;
     padding: 0%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content-container {
@@ -62,6 +63,7 @@ body {
   form {
     font-weight: 700;
     color: #525C60;
+    font-family: 'Lato', sans-serif;
   }
 
   form input {
@@ -69,11 +71,12 @@ body {
     width: 100%;
     margin-top: 2%;
     border-color: #525C60;
-    border-width: 0.1em;
+    border-width: 0.25em;
     padding: 2% 0;
   }
 
   form .submit-btn{
+    font-family: 'Montserrat', sans-serif;
     width: 102%;
     margin-top: 7%;
     padding: 3% 0;
@@ -90,9 +93,4 @@ body {
   
   form .submit-btn:hover{
     background-color: #EFD340;
-  }
-
-  .content-container .content-box-2 img{
-    /* width: 100%; */
-    justify-content: right;
   }
