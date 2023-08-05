@@ -16,7 +16,7 @@ body {
     width: 45%;
     height: auto;
     color: black;
-    margin: 1.5% 10%;
+    margin: 0.8% 10%;
     border-radius: 5%;
     background-color: #F9F8F8;
   }
@@ -75,6 +75,10 @@ body {
     padding: 2% 0;
   }
 
+  form input:hover{
+    background-color: #eff6f1;
+  }
+
   form .submit-btn{
     font-family: 'Montserrat', sans-serif;
     width: 102%;
@@ -93,4 +97,5 @@ body {
   
   form .submit-btn:hover{
     background-color: #EFD340;
+    font-size: 1.06em ;
   }
