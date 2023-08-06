@@ -437,9 +437,13 @@ body.active { overflow: hidden; }
   visibility: visible;
 }
 
-.navbar-list { margin-block: 10px; }
+.navbar-list {
+  margin-block: 10px; 
+}
 
-.nav-item:not(:last-child) { border-block-end: 1px solid hsla(0, 0%, 0%, 0.04); }
+.nav-item:not(:last-child) {
+  border-block-end: 1px solid hsla(0, 0%, 0%, 0.04); 
+}
 
 .navbar-link {
   color: var(--rich-black-fogra-29);
