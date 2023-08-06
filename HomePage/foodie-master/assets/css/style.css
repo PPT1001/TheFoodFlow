@@ -378,7 +378,7 @@ body.active { overflow: hidden; }
 
 .logo .span {
   display: inline-block;
-  color: rgb(38, 190, 38);;
+  color: rgb(38, 190, 38);
 }
 
 .header-btn-group {
@@ -450,7 +450,9 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--dark-orange); }
+.navbar-link:is(:hover, :focus) { color: rgb(38, 190, 38); }
+
+
 
 
 
