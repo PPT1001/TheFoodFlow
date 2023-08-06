@@ -536,7 +536,8 @@ body.active { overflow: hidden; }
 }
 
 .hero-subtitle {
-  color: var(--dark-orange);
+  /* color: var(--dark-orange); */
+  color: green;
   font-family: var(--ff-shadows-into-light);
   font-size: var(--fs-3);
   letter-spacing: 1px;
