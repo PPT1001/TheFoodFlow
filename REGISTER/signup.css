@@ -1,0 +1,112 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+}
+
+.content-box-1{
+    width: 45%;
+    height: auto;
+    color: black;
+    margin: 0.8% 10%;
+    border-radius: 5%;
+    background-color: #F9F8F8;
+  }
+
+  .content-box-2 {
+    width: 35%;
+    height: auto;
+    color: black;
+    margin: 0%;
+  }
+
+  .content-box-2 .image-container {
+    width: 85%;
+    opacity: 0.8;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/vertical_food.jpg);
+  }
+
+  
+  .content-box-1 h3, .content-box-1 h5{
+    margin: 1%;
+  }
+
+  .content-box-1 h1, .content-box-1 h3 {
+    color: #274C5B;
+  }
+
+  .content-box-1 h5{
+    color: #525C60;
+  }
+
+  .content-box-1 h5 a {
+    color: #EFD372;
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px #EFD340;
+  }
+
+  .content-box-1 a:hover{
+    color: black;
+  }
+
+  .content-box-1 .section-A{
+    margin-bottom: 2.5%;
+    text-align: center;
+
+  }
+
+  .content-box-1 .section-B{
+    margin: 5% 25%;
+
+  }
+
+  form {
+    font-weight: 700;
+    color: #525C60;
+    font-family: 'Lato', sans-serif;
+  }
+
+  form input {
+    border-radius: 0.2rem;
+    width: 100%;
+    margin-top: 2%;
+    border-color: #525C60;
+    border-width: 0.25em;
+    padding: 2% 0;
+  }
+
+  form input:hover{
+    background-color: #eff6f1;
+  }
+
+  form .submit-btn{
+    font-family: 'Montserrat', sans-serif;
+    width: 102%;
+    margin-top: 7%;
+    padding: 3% 0;
+    border-radius: 2.5rem;
+    background-color: #EFD372;
+    color: #274C5B;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 1em;
+    text-shadow: 0.5px 0.5px #274C5B;
+  }
+
+  
+  form .submit-btn:hover{
+    background-color: #EFD340;
+    font-size: 1.06em ;
+  }
