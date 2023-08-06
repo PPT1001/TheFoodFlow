@@ -204,7 +204,7 @@ body.active { overflow: hidden; }
 .h4 { font-size: var(--fs-3); }
 
 .btn {
-  background-color: var(--bg-color, var(--deep-saffron));
+  background-color: rgb(38, 190, 38);
   color: var(--white);
   font-family: var(--ff-rubik);
   font-size: var(--fs-4);
@@ -212,6 +212,7 @@ body.active { overflow: hidden; }
   height: var(--height, 45px);
   padding-inline: var(--padding-inline, 35px);
   transition: var(--transition-1);
+  border-radius: 10px;
 }
 
 .btn-hover {
@@ -377,7 +378,7 @@ body.active { overflow: hidden; }
 
 .logo .span {
   display: inline-block;
-  color: var(--deep-saffron);
+  color: rgb(38, 190, 38);;
 }
 
 .header-btn-group {
@@ -537,7 +538,7 @@ body.active { overflow: hidden; }
 
 .hero-subtitle {
   /* color: var(--dark-orange); */
-  color: green;
+  color: rgb(38, 190, 38);
   font-family: var(--ff-shadows-into-light);
   font-size: var(--fs-3);
   letter-spacing: 1px;
@@ -545,13 +546,13 @@ body.active { overflow: hidden; }
 }
 
 .hero-title {
-  color: var(--champagne-pink);
+  color: white;
   max-width: 12ch;
   margin-inline: auto;
 }
 
 .hero-text {
-  color: var(--desert-sand);
+  color: white;
   margin-block: 15px 30px;
   max-width: 44ch;
   margin-inline: auto;
