@@ -335,7 +335,7 @@ body.active { overflow: hidden; }
 
 .header {
   --color: var(--white);
-  --btn-color: var(--champagne-pink);
+  --btn-color: white;
 
   position: absolute;
   top: 0;
