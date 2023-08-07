@@ -532,7 +532,9 @@ body.active { overflow: hidden; }
   #HERO
 \*-----------------------------------*/
 
-.hero-banner { display: none; }
+.hero-banner { 
+  display: none; 
+}
 
 .hero {
   background-repeat: no-repeat;
