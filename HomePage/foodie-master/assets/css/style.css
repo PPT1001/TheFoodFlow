@@ -592,7 +592,7 @@ body.active { overflow: hidden; }
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--deep-saffron);
+  background-color: rgb(38, 190, 38);
   clip-path: var(--clip-path-1);
   transform: scaleY(0.3);
   transform-origin: bottom;
