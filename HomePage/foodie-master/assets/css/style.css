@@ -1093,7 +1093,7 @@ body.active { overflow: hidden; }
 }
 
 .blog-card .card-meta-link ion-icon {
-  color: var(--tangerine);
+  color: rgb(38, 190, 38);
   font-size: 1.5rem;
   --ionicon-stroke-width: 60px;
 }
@@ -1134,7 +1134,7 @@ body.active { overflow: hidden; }
 .blog-card .btn-link ion-icon { font-size: 1.5rem; }
 
 .blog-card .btn-link:is(:hover, :focus) {
-  color: var(--deep-saffron);
+  color: rgb(38, 190, 38);
   gap: 10px;
 }
 
