@@ -205,7 +205,7 @@ body.active { overflow: hidden; }
 
 .btn {
   background-color: var(--bg-color, var(--deep-saffron));
-  color: var(--white);
+  color: var(--cinnabar);
   font-family: var(--ff-rubik);
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
@@ -598,11 +598,13 @@ body.active { overflow: hidden; }
 
 .food-menu-btn {
   position: absolute;
+  font-weight: 1500;
+  font-size: 1.5rem;
   top: calc(50% + 15px);
   left: 50%;
   transform: translate(-50%, 0);
   min-width: max-content;
-  --bg-color: var(--cinnabar);
+  --bg-color: var(--deep-saffron);
   width: 60%;
   --height: 40px;
   --padding-inline: 20px;
@@ -610,7 +612,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-2);
 }
 
-.food-menu-btn:is(:hover, :focus) { --bg-color: var(--deep-saffron); }
+.food-menu-btn:is(:hover, :focus) { --bg-color: #EFD340;}
 
 .food-menu-card:is(:hover, :focus-within) .food-menu-btn {
   transform: translate(-50%, -50%);
@@ -643,14 +645,18 @@ body.active { overflow: hidden; }
 }
 
 .food-menu-card .price-text {
-  color: var(--cinnabar);
+  /* color: #EFD340; */
+  font-weight: 700;
+  /* text-shadow: 1px 1px var(--deep-saffron); */
   text-transform: uppercase;
   padding-inline-end: 5px;
 }
 
-.food-menu-card .price { color: var(--deep-saffron); }
+.food-menu-card .price { 
+  color: var(--cinnabar);
+}
 
-.food-menu-card .del { color: var(--gray-x-11-gray); }
+.food-menu-card .del { color:#EFD340; }
 
 
 
