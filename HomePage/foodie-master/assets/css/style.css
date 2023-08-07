@@ -204,7 +204,7 @@ body.active { overflow: hidden; }
 .h4 { font-size: var(--fs-3); }
 
 .btn {
-  background-color: var(--bg-color, var(--deep-saffron));
+  background-color: rgb(38, 190, 38);
   color: var(--white);
   font-family: var(--ff-rubik);
   font-size: var(--fs-4);
@@ -212,6 +212,7 @@ body.active { overflow: hidden; }
   height: var(--height, 45px);
   padding-inline: var(--padding-inline, 35px);
   transition: var(--transition-1);
+  border-radius: 10px;
 }
 
 .btn-hover {
@@ -334,7 +335,7 @@ body.active { overflow: hidden; }
 
 .header {
   --color: var(--white);
-  --btn-color: var(--champagne-pink);
+  --btn-color: black;
 
   position: absolute;
   top: 0;
@@ -368,7 +369,7 @@ body.active { overflow: hidden; }
 }
 
 .logo {
-  color: var(--color);
+  color: black;
   font-family: var(--ff-rubik);
   font-size: 2.8rem;
   font-weight: var(--fw-700);
@@ -377,7 +378,7 @@ body.active { overflow: hidden; }
 
 .logo .span {
   display: inline-block;
-  color: var(--deep-saffron);
+  color: rgb(38, 190, 38);
 }
 
 .header-btn-group {
@@ -436,9 +437,13 @@ body.active { overflow: hidden; }
   visibility: visible;
 }
 
-.navbar-list { margin-block: 10px; }
+.navbar-list {
+  margin-block: 10px; 
+}
 
-.nav-item:not(:last-child) { border-block-end: 1px solid hsla(0, 0%, 0%, 0.04); }
+.nav-item:not(:last-child) {
+  border-block-end: 1px solid hsla(0, 0%, 0%, 0.04); 
+}
 
 .navbar-link {
   color: var(--rich-black-fogra-29);
@@ -449,7 +454,9 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--dark-orange); }
+.navbar-link:is(:hover, :focus) { color: rgb(38, 190, 38); }
+
+
 
 
 
@@ -525,7 +532,9 @@ body.active { overflow: hidden; }
   #HERO
 \*-----------------------------------*/
 
-.hero-banner { display: none; }
+.hero-banner { 
+  display: none; 
+}
 
 .hero {
   background-repeat: no-repeat;
@@ -537,7 +546,7 @@ body.active { overflow: hidden; }
 
 .hero-subtitle {
   /* color: var(--dark-orange); */
-  color: green;
+  color: rgb(38, 190, 38);
   font-family: var(--ff-shadows-into-light);
   font-size: var(--fs-3);
   letter-spacing: 1px;
@@ -545,13 +554,13 @@ body.active { overflow: hidden; }
 }
 
 .hero-title {
-  color: var(--champagne-pink);
+  color: black;
   max-width: 12ch;
   margin-inline: auto;
 }
 
 .hero-text {
-  color: var(--desert-sand);
+  color: black;
   margin-block: 15px 30px;
   max-width: 44ch;
   margin-inline: auto;
@@ -585,7 +594,7 @@ body.active { overflow: hidden; }
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--deep-saffron);
+  background-color: rgb(38, 190, 38);
   clip-path: var(--clip-path-1);
   transform: scaleY(0.3);
   transform-origin: bottom;
@@ -1065,7 +1074,7 @@ body.active { overflow: hidden; }
   right: 20px;
   font-family: var(--ff-rubik);
   text-transform: uppercase;
-  --bg-color: var(--tangerine);
+  --bg-color: rgb(38, 190, 38);
   --padding-block: 5px;
 }
 
@@ -1086,7 +1095,7 @@ body.active { overflow: hidden; }
 }
 
 .blog-card .card-meta-link ion-icon {
-  color: var(--tangerine);
+  color: rgb(38, 190, 38);
   font-size: 1.5rem;
   --ionicon-stroke-width: 60px;
 }
@@ -1127,7 +1136,7 @@ body.active { overflow: hidden; }
 .blog-card .btn-link ion-icon { font-size: 1.5rem; }
 
 .blog-card .btn-link:is(:hover, :focus) {
-  color: var(--deep-saffron);
+  color: rgb(38, 190, 38);
   gap: 10px;
 }
 
@@ -1182,7 +1191,7 @@ body.active { overflow: hidden; }
 }
 
 .social-link {
-  background-color: var(--dark-orange);
+  background-color: rgb(38, 190, 38);
   color: var(--white);
   font-size: 1.5rem;
   padding: 10px;
@@ -1208,10 +1217,10 @@ body.active { overflow: hidden; }
   top: 50%;
   transform: translateY(-50%);
   left: calc(100% + 15px);
-  background-color: var(--deep-saffron);
+  background-color: rgb(38, 190, 38);
   width: 40px;
   height: 4px;
-  border-inline-end: 5px solid var(--deep-saffron);
+  border-inline-end: 5px solid rgb(38, 190, 38);
   box-shadow: inset -5px 0 0 var(--white);
 }
 
@@ -1280,7 +1289,7 @@ textarea.input-field {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--deep-saffron);
+  background-color: rgb(38, 190, 38);
   color: var(--white);
   padding: 15px;
   border-radius: 50%;
