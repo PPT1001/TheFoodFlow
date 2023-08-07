@@ -335,7 +335,7 @@ body.active { overflow: hidden; }
 
 .header {
   --color: var(--white);
-  --btn-color: white;
+  --btn-color: black;
 
   position: absolute;
   top: 0;
@@ -369,7 +369,7 @@ body.active { overflow: hidden; }
 }
 
 .logo {
-  color: var(--color);
+  color: black;
   font-family: var(--ff-rubik);
   font-size: 2.8rem;
   font-weight: var(--fw-700);
@@ -552,13 +552,13 @@ body.active { overflow: hidden; }
 }
 
 .hero-title {
-  color: white;
+  color: black;
   max-width: 12ch;
   margin-inline: auto;
 }
 
 .hero-text {
-  color: white;
+  color: black;
   margin-block: 15px 30px;
   max-width: 44ch;
   margin-inline: auto;
@@ -1189,7 +1189,7 @@ body.active { overflow: hidden; }
 }
 
 .social-link {
-  background-color: var(--dark-orange);
+  background-color: rgb(38, 190, 38);
   color: var(--white);
   font-size: 1.5rem;
   padding: 10px;
@@ -1215,10 +1215,10 @@ body.active { overflow: hidden; }
   top: 50%;
   transform: translateY(-50%);
   left: calc(100% + 15px);
-  background-color: var(--deep-saffron);
+  background-color: rgb(38, 190, 38);
   width: 40px;
   height: 4px;
-  border-inline-end: 5px solid var(--deep-saffron);
+  border-inline-end: 5px solid rgb(38, 190, 38);
   box-shadow: inset -5px 0 0 var(--white);
 }
 
