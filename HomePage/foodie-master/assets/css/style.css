@@ -39,6 +39,8 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
+  --darkgreen: hsl(120, 100%, 25%);
+  --lightgreen: hsl(120, 100%, 75%);
 
   /**
    * typography
@@ -168,9 +170,9 @@ body.active { overflow: hidden; }
 
 ::-webkit-scrollbar-track { background-color: var(--cultured); }
 
-::-webkit-scrollbar-thumb { background-color: var(--deep-saffron); }
+::-webkit-scrollbar-thumb { background-color: var(--lightgreen); }
 
-::-webkit-scrollbar-thumb:hover { background-color: var(--tangerine); }
+::-webkit-scrollbar-thumb:hover { background-color: var(--darkgreen); }
 
 
 
@@ -259,7 +261,11 @@ body.active { overflow: hidden; }
 
 .section-divider.gray::after { background-image: url("../images/shape-grey.png"); }
 
+
+
 .w-100 { width: 100%; }
+
+
 
 .has-scrollbar {
   display: flex;
@@ -451,10 +457,14 @@ body.active { overflow: hidden; }
   font-family: var(--ff-rubik);
   font-weight: var(--fw-500);
   padding: 10px 15px;
-  transition: var(--transition-1);
+  /* transition: var(--transition-1); */
 }
 
-.navbar-link:is(:hover, :focus) { color: rgb(38, 190, 38); }
+.navbar-link:is(:hover, :focus) { 
+  background-color: rgb(38, 190, 38);
+  border-radius: 20px;
+  color: var(--white);
+}
 
 
 
