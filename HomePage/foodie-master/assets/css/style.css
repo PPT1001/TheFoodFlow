@@ -550,8 +550,9 @@ body.active { overflow: hidden; }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-block: 145px 60px;
+  /* padding-block: 145px 60px; */
   text-align: center;
+  height: 100vh;
 }
 
 .hero-subtitle {
@@ -579,8 +580,8 @@ body.active { overflow: hidden; }
 .hero .btn { margin-inline: auto; }
 
 .hero .btn:is(:hover, :focus) {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--black_95);
+  color: var(--white);
 }
 
 
@@ -590,6 +591,8 @@ body.active { overflow: hidden; }
 /*-----------------------------------*\
   #PROMO
 \*-----------------------------------*/
+
+.promo{ text-align: center;}
 
 .promo-card {
   position: relative;

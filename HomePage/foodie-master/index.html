@@ -75,9 +75,9 @@
       </nav>
 
       <div class="header-btn-group">
-        <button class="search-btn" aria-label="Search" data-search-btn>
+        <!-- <button class="search-btn" aria-label="Search" data-search-btn>
           <ion-icon name="search-outline"></ion-icon>
-        </button>
+        </button> -->
 
         <button class="btn btn-hover">Login/Signup</button>
 
@@ -99,7 +99,7 @@
     - #SEARCH BOX
   -->
 
-  <div class="search-container" data-search-container>
+  <!-- <div class="search-container" data-search-container>
 
     <div class="search-box">
       <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
@@ -112,7 +112,7 @@
 
     <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
 
-  </div>
+  </div> -->
 
 
 
@@ -136,18 +136,81 @@
 
             <p class="hero-text">Connecting surplus to those in need, one meal at a time.</p>
 
-            <button class="btn">Explore Now!</button>
+            <button class="btn"><a href="#about" style="text-decoration: none;">Explore Now!</a></button>
             
           </div>
 
           <figure class="hero-banner">
             <img src="../../Images/Header-Image.png" width="820" height="716" alt="" aria-hidden="true"
-              class="w-100 hero-img-bg">
+              class="w-100 hero-img-bg" >
 
           </figure>
 
         </div>
       </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="../../Images/Header-Image.png" width="509" height="459" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img">
+
+            <img src="./assets/images/sale-shape-red.png" width="216" height="226" alt="get up to 50% off now"
+              class="abs-img scale-up-anim">
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Join the Food Redistribution Movement: Be a Hunger 
+              <span class="span">Hero Today</span>
+            </h2>
+
+            <p class="section-text">
+              Your actions can make a meaningful difference in ending food waste and hunger. Together, we can create a world where no one goes to bed hungry.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Delicious & Healthy Foods</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Community Engagement</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Impact Tracking</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Fastest Food Delivery</span>
+              </li>
+
+            </ul>
+
+            <button class="btn btn-hover">Join Us Now</button>
+
+          </div>
+
+        </div>
+      </section>
+
 
 
 
@@ -157,296 +220,6 @@
       <!-- <section id="about">
 
       </section> -->
-
-
-
-
-      <!-- 
-        - #FOOD MENU
-      -->
-
-      <!-- <section class="section food-menu" id="food-menu">
-        <div class="container">
-
-          <p class="section-subtitle">Popular Dishes</p>
-
-          <h2 class="h2 section-title">
-            Our Delicious <span class="span">Foods</span>
-          </h2>
-
-          <p class="section-text">
-            Food is any substance consumed to provide nutritional support for an organism.
-          </p>
-
-          <ul class="fiter-list">
-
-            <li>
-              <button class="filter-btn  active">All</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Pizza</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Burger</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Drinks</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Sandwich</button>
-            </li>
-
-          </ul>
-
-          <ul class="food-menu-list">
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-1.png" width="300" height="300" loading="lazy"
-                    alt="Fried Chicken Unlimited" class="w-100">
-
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Chicken</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Fried Chicken Unlimited</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price">$49.00</data>
-
-                  <del class="del" value="69.00">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-2.png" width="300" height="300" loading="lazy"
-                    alt="Burger King Whopper" class="w-100">
-
-                  <div class="badge">-10%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Noddles</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Burger King Whopper</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="29.00">$29.00</data>
-
-                  <del class="del">$39.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-3.png" width="300" height="300" loading="lazy"
-                    alt="White Castle Pizzas" class="w-100">
-
-                  <div class="badge">-25%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Pizzas</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">White Castle Pizzas</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-4.png" width="300" height="300" loading="lazy"
-                    alt="Bell Burrito Supreme" class="w-100">
-
-                  <div class="badge">-20%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Burrito</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Bell Burrito Supreme</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="59.00 ">$59.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-5.png" width="300" height="300" loading="lazy"
-                    alt="Kung Pao Chicken BBQ" class="w-100">
-
-                  <div class="badge">-5%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Nuggets</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Kung Pao Chicken BBQ</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-6.png" width="300" height="300" loading="lazy"
-                    alt="Wendy's Chicken" class="w-100">
-
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Chicken</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Wendy's Chicken</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-
-        </div>
-      </section>
-
-
-
-      <div></div> -->
 
       <!-- 
         - #CTA
@@ -459,7 +232,7 @@
 
             <h2 class="h2 section-title">
               Harvesting Surplus, Sharing Abundance: Our Journey to 
-              <span class="span">Secure Food for All</span>
+              <span class="span">Secure Food for All</span>
             </h2>
 
             <p class="section-text">
@@ -652,8 +425,14 @@
         - #PROMO
       -->
 
-      <section class="section section-divider white promo">
+      <section class="section section-divider white promo" id="promo">
         <div class="container">
+
+          <h2 class="h2 section-title">
+            Our <span class="span">Partners</span>
+          </h2>
+          <br>
+          <br>
 
           <ul class="promo-list has-scrollbar">
 
@@ -675,11 +454,12 @@
                   </svg>
                 </div>
 
-                <h3 class="h3 card-title">Maxican Pizza</h3>
+                <h3 class="h3 card-title">Hilton Colombo</h3>
 
-                <p class="card-text">
-                  Food is any substance consumed to provide nutritional support for an organism.
-                </p>
+                <!-- <p class="card-text">
+                  Hilton Hotels & Resorts is Hilton's flagship brand and one of the largest hotel brands in the world. The brand is targeted at both business and 
+                  leisure travelers with locations in major city centers, near airports, convention centers, and popular vacation destinations around the world.
+                </p> -->
 
                 <img src="./assets/images/promo-1.png" width="300" height="300" loading="lazy" alt="Maxican Pizza"
                   class="w-100 card-banner">
@@ -705,11 +485,13 @@
                   </svg>
                 </div>
 
-                <h3 class="h3 card-title">Soft Drinks</h3>
+                <h3 class="h3 card-title">Shangri-La Colombo</h3>
 
-                <p class="card-text">
-                  Food is any substance consumed to provide nutritional support for an organism.
-                </p>
+                <!-- <p class="card-text">
+                  Shangri-La Hotels and Resorts is a multinational hospitality company, founded in 1971 by tycoon Robert Kuok. 
+                  It is a subsidiary of Kerry Properties, the company has over 100 luxury hotels and resorts with over 40,000 rooms in Africa, Asia, Europe, 
+                  the Middle East, North America and Oceania.
+                </p> -->
 
                 <img src="./assets/images/promo-2.png" width="300" height="300" loading="lazy" alt="Soft Drinks"
                   class="w-100 card-banner">
@@ -735,11 +517,11 @@
                   </svg>
                 </div>
 
-                <h3 class="h3 card-title">French Fry</h3>
+                <h3 class="h3 card-title">Radisson Colombo</h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Food is any substance consumed to provide nutritional support for an organism.
-                </p>
+                </p> -->
 
                 <img src="./assets/images/promo-3.png" width="300" height="300" loading="lazy" alt="French Fry"
                   class="w-100 card-banner">
@@ -766,11 +548,11 @@
                   </svg>
                 </div>
 
-                <h3 class="h3 card-title">Burger Kingo</h3>
+                <h3 class="h3 card-title">Jetwing Colombo</h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Food is any substance consumed to provide nutritional support for an organism.
-                </p>
+                </p> -->
 
                 <img src="./assets/images/promo-4.png" width="300" height="300" loading="lazy" alt="Burger Kingo"
                   class="w-100 card-banner">
@@ -797,11 +579,11 @@
                   </svg>
                 </div>
 
-                <h3 class="h3 card-title">Chicken Masala</h3>
+                <h3 class="h3 card-title">Cinnamon Lakeside</h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Food is any substance consumed to provide nutritional support for an organism.
-                </p>
+                </p> -->
 
                 <img src="./assets/images/promo-5.png" width="300" height="300" loading="lazy" alt="Chicken Masala"
                   class="w-100 card-banner">
@@ -818,70 +600,7 @@
 
 
 
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section section-divider gray about" id="about">
-        <div class="container">
-
-          <div class="about-banner">
-            <img src="../../Images/Header-Image.png" width="509" height="459" loading="lazy" alt="Burger with Drinks"
-              class="w-100 about-img">
-
-            <img src="./assets/images/sale-shape-red.png" width="216" height="226" alt="get up to 50% off now"
-              class="abs-img scale-up-anim">
-          </div>
-
-          <div class="about-content">
-
-            <h2 class="h2 section-title">
-              Join the Food Redistribution Movement: Be a Hunger 
-              <span class="span">Hero Today</span>
-            </h2>
-
-            <p class="section-text">
-              Your actions can make a meaningful difference in ending food waste and hunger. Together, we can create a world where no one goes to bed hungry.
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-
-                <span class="span">Delicious & Healthy Foods</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-
-                <span class="span">Community Engagement</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-
-                <span class="span">Impact Tracking</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-
-                <span class="span">Fastest Food Delivery</span>
-              </li>
-
-            </ul>
-
-            <button class="btn btn-hover">Join Us Now</button>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
+      
       <!-- 
         - #BLOG
       -->
