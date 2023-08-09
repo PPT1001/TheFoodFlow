@@ -291,7 +291,7 @@ body.active { overflow: hidden; }
 
 .section-title > .span {
   display: inline-block;
-  color: var(--deep-saffron);
+  color: hsl(32, 100%, 59%);;
 }
 
 .abs-img {
@@ -315,7 +315,7 @@ body.active { overflow: hidden; }
 
 .badge {
   position: absolute;
-  background: var(--bg-color, var(--cinnabar));
+  background: var(--bg-color, hsl(32, 100%, 59%));
   color: var(--white);
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
@@ -580,9 +580,9 @@ body.active { overflow: hidden; }
 }
 
 .filter-btn.active {
-  background-color: var(--deep-saffron);
+  background-color: rgb(38, 190, 38);
   --color: var(--white);
-  --border-color: var(--deep-saffron);
+  /* --border-color: var(--deep-saffron); */
 }
 
 .food-menu-list {
@@ -655,7 +655,7 @@ body.active { overflow: hidden; }
 }
 
 .food-menu-card .price-text {
-  /* color: #EFD340; */
+  color: black;
   font-weight: 700;
   /* text-shadow: 1px 1px var(--deep-saffron); */
   text-transform: uppercase;
@@ -663,11 +663,12 @@ body.active { overflow: hidden; }
 }
 
 .food-menu-card .price { 
-  color: var(--cinnabar);
+  color: hsl(32, 100%, 59%)
 }
 
-.food-menu-card .del { color:#EFD340; }
-
+.food-menu-card .del { 
+  color: rgb(38, 190, 38);
+}
 
 
 
