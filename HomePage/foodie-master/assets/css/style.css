@@ -1213,7 +1213,7 @@ body.active { overflow: hidden; }
 
 .social-link:is(:hover, :focus) { background-color: var(--rich-black-fogra-29); }
 
-.footer-list-title {
+.footer-list-title ,.footer-login {
   position: relative;
   max-width: max-content;
   color: var(--rich-black-fogra-29);
@@ -1240,12 +1240,44 @@ body.active { overflow: hidden; }
 .footer-list > li:not(:last-child) { margin-block-end: 15px; }
 
 .footer-list address { max-width: 20ch; }
-
+.footer-list-login {
+  border: #525C60;
+  align-items: center;
+}
+.form-login{
+  border: 1px;
+  border-color: #000;
+}
 .footer-form {
   background-color: var(--white);
   padding: 30px;
   border: 1px solid var(--cultured);
   box-shadow: var(--shadow-2);
+}
+form {
+  font-weight: 700;
+  color: #525C60;
+  font-family: var(--ff-rubik);
+  border: 1px;
+}
+
+form input {
+  border-radius: 0.2rem;
+  border: 1px;
+  width: 80%;
+  margin-top: 2%;
+  border-color: #525C60;
+  border-width: 0.25em;
+  padding: 2% 0;
+}
+form :placeholder-shown{
+  color: dimgrey;
+  font-family: var(--ff-rubik);
+  font-size: var(--fs-4);
+  
+}
+form label{
+  color: #000;
 }
 
 .input-wrapper {
