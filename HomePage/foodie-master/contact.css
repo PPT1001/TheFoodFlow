@@ -1,0 +1,29 @@
+.row{
+    padding: 50px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+form .leftcolumn{
+    width: 50%;
+    float: left;
+    padding: 25px 35px 25px 35px;
+}
+form .rightcolumn{
+    width: 50%;
+    float: left;
+    padding: 25px 35px 25px 35px;
+}
+form input, textarea{
+ border: 2px solid black;
+ border-radius: 4px;
+ color: black;
+}
+form label{
+    color: black;
+    font-family: var( --ff-rubik);
+}
+
