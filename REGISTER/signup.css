@@ -1,7 +1,10 @@
-body {
-    margin: 0%;
-    padding: 0%;
-    font-family:'Roboto', sans-serif;
+body{
+  color: var(--rich-black-fogra-29);
+  font-size: var(--fs-4);
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-500);
+  padding: 10px 15px;
+  
 }
 
 .content-container {
@@ -64,6 +67,10 @@ body {
     margin-bottom: 2.5%;
     text-align: center;
 
+  }
+  .content-box-1 .section-A img {
+    width: 40px;
+    height: 40px;
   }
 
   .content-box-1 .section-B{

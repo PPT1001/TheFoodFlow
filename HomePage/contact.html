@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodFlow</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./foodie-master/assets/css/style.css">
+  <link rel="stylesheet" href="./contact.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="../HomePage/foodie-master/index.html" class="logo">
+          <img src="./foodie-master/assets/images/logo.jpg"> FoodFlow<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="nav-item">
+            <a href="../HomePage/foodie-master/index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../HomePage/about.html" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../ShopPage/foodie-master/index.html" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../HomePage/contact.html" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <!-- <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button> -->
+      <form action="../../REGISTER/packages.html">
+        <button class="btn btn-hover">Login/Signup
+          </button>
+        </form>
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <!-- <div class="search-container" data-search-container>
+
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+  </div> -->
+
+
+
+
+
+  <main>
+    <article>
+       <br><br><br>
+     <section class="hero">
+        <div class="row">
+            <form>
+            <div class="leftcolumn">
+                <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="    Eg: Loshan" required><br><br>
+                    
+                    <label for="mail">Email:</label><br>
+                    <input type="email" id="mail" name="mail" placeholder="    Eg: Thefoodflow@gmail.com" required><br><br>
+                    
+                    <label for="password">Organization: </label><br>
+                    <input type="text" id="name" name="Organization" placeholder="    Eg: FoodFlow" required><br><br>
+        
+            </div>
+            <div class="rightcolumn">
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="fname" name="lname" placeholder="    Eg: selvaraj" required><br><br>
+
+                <label for="Mnumber">Mobile Number:</label><br>
+                <input type="number" id="Mnumber" name="Mnumber" placeholder="    Eg: 0112562564" required><br><br>
+
+                <select id="Purpose" name="Purpose">
+                    <option value="" disabled selected hidden>Choose your purpose </option>
+                    <option value="As a food Supplier">As a Food Supplier</option>
+                    <option value="As a food receiver">As a Food Receiver</option>
+                  </select><br><br>
+            </div>
+            <textarea id="subject" name="subject" placeholder="Write Your Message" style="height:200px"></textarea><br><br>
+            <button class="btn btn-hover">submit
+            </button>
+        </form>
+        </div>
+     </section>
+      
+
+    </article>
+  </main>
+</body>
+</html>
