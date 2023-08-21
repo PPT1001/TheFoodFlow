@@ -14,5 +14,6 @@
             "username": "foodflow",
             "password": "shaaks@2721"
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

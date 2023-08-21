@@ -386,6 +386,11 @@ body.active { overflow: hidden; }
   font-weight: var(--fw-700);
   letter-spacing: -2px;
 }
+.logo img{
+  width: 80px;
+  height:80px;
+  border-radius: 5px;
+}
 
 .logo .span {
   display: inline-block;
