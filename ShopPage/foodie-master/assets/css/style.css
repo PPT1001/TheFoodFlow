@@ -371,6 +371,11 @@ body.active { overflow: hidden; }
   justify-content: space-between;
   align-items: center;
 }
+.logo img{
+  width: 80px;
+  height:80px;
+  border-radius: 50%;
+}
 
 .logo {
   color: black;
