@@ -113,7 +113,7 @@ a {
 }
 
 a,
-img, 
+img,
 svg,
 span,
 input,
@@ -347,14 +347,9 @@ body.active { overflow: hidden; }
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 20px;
+  /* padding-block: 20px; */
   border-block-end: 1px solid var(--champagne-pink_20);
   z-index: 4;
-}
-.header img{
-  width:50px ;
-  height: 50px;
-  display: inline;
 }
 
 .header.active {
@@ -362,7 +357,7 @@ body.active { overflow: hidden; }
   --btn-color: var(--rich-black-fogra-29);
 
   position: fixed;
-  top: -86px;
+  top: -106px;
   background-color: var(--white);
   box-shadow: var(--shadow-1);
   animation: slideIn 0.5s ease-out forwards;
@@ -386,15 +381,19 @@ body.active { overflow: hidden; }
   font-weight: var(--fw-700);
   letter-spacing: -2px;
 }
-.logo img{
-  width: 80px;
-  height:80px;
-  border-radius:50%;
-}
 
 .logo .span {
   display: inline-block;
   color: rgb(38, 190, 38);
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-inline-end: 10px;
+  margin-block-end: 5px;
 }
 
 .header-btn-group {
@@ -1223,7 +1222,7 @@ body.active { overflow: hidden; }
 
 .social-link:is(:hover, :focus) { background-color: var(--rich-black-fogra-29); }
 
-.footer-list-title ,.footer-login {
+.footer-list-title {
   position: relative;
   max-width: max-content;
   color: var(--rich-black-fogra-29);
@@ -1250,47 +1249,14 @@ body.active { overflow: hidden; }
 .footer-list > li:not(:last-child) { margin-block-end: 15px; }
 
 .footer-list address { max-width: 20ch; }
-.footer-list-login {
-  border: #525C60;
-  align-items: center;
-}
-/*
-.form-login{
-  border: 1px;
-  border-color: #000;
-}
+
 .footer-form {
   background-color: var(--white);
   padding: 30px;
   border: 1px solid var(--cultured);
   box-shadow: var(--shadow-2);
 }
-form {
-  font-weight: 700;
-  color: #525C60;
-  font-family: var(--ff-rubik);
-  border: 1px;
-}
 
-form input {
-  border-radius: 0.2rem;
-  border: 1px;
-  width: 80%;
-  margin-top: 2%;
-  border-color: #525C60;
-  border-width: 0.25em;
-  padding: 2% 0;
-}
-form :placeholder-shown{
-  color: dimgrey;
-  font-family: var(--ff-rubik);
-  font-size: var(--fs-4);
-  
-}
-form label{
-  color: #000;
-}
-*/
 .input-wrapper {
   display: grid;
   gap: 10px;
@@ -1842,213 +1808,4 @@ textarea.input-field {
 .section2-text {
   margin-top: -130px;
   padding-bottom: 125px;
-}
-
-
-<<<<<<< HEAD
-/* footer login*/
-.logintitle {
-  background-color: var(--gainsboro);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 5px;
-=======
-
-
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-/*=============== VARIABLES CSS ===============*/
-:root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --white-color: hsl(0, 0%, 100%);
-  --black-color: hsl(0, 0%, 0%);
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
-  --h1-font-size: 1.75rem;
-  --normal-font-size: 1rem;
-  --small-font-size: .813rem;
-  /*========== Font weight ==========*/
-  --font-medium: 500;
->>>>>>> 8f24239c838da30c4c30c079985f8bca314afdb7
-}
-
-/*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body,
-input,
-button {
-  font-size: var(--normal-font-size);
-  font-family: var(--body-font);
-}
-
-body {
-  color: var(--white-color);
-}
-
-input,
-button {
-  border: none;
-  outline: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*=============== LOGIN ===============*/
-.login {
-  position: relative;
-  height: 100vh;
-  display: grid;
-  align-items: center;
-}
-.login__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.login__form {
-  position: relative;
-  background-color: hsla(0, 0%, 10%, 0.1);
-  border: 2px solid var(--white-color);
-  margin-inline: 1.5rem;
-  padding: 2.5rem 1.5rem;
-  border-radius: 1rem;
-  backdrop-filter: blur(8px);
-}
-.login__title {
-  text-align: center;
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: 2rem;
-}
-.login__content, .login__box {
-  display: grid;
-}
-.login__content {
-  row-gap: 1.75rem;
-  margin-bottom: 1.5rem;
-}
-.login__box {
-  grid-template-columns: max-content 1fr;
-  align-items: center;
-  column-gap: 0.75rem;
-  border-bottom: 2px solid var(--white-color);
-}
-.login__icon, .login__eye {
-  font-size: 1.25rem;
-}
-.login__input {
-  width: 100%;
-  padding-block: 0.8rem;
-  background: none;
-  color: var(--white-color);
-  position: relative;
-  z-index: 1;
-}
-.login__box-input {
-  position: relative;
-}
-.login__label {
-  position: absolute;
-  left: 0;
-  top: 13px;
-  font-weight: var(--font-medium);
-  transition: top 0.3s, font-size 0.3s;
-}
-.login__eye {
-  position: absolute;
-  right: 0;
-  top: 18px;
-  z-index: 10;
-  cursor: pointer;
-}
-.login__box:nth-child(2) input {
-  padding-right: 1.8rem;
-}
-.login__check, .login__check-group {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.login__check {
-  margin-bottom: 1.5rem;
-}
-.login__check-label, .login__forgot, .login__register {
-  font-size: var(--small-font-size);
-}
-.login__check-group {
-  column-gap: 0.5rem;
-}
-.login__check-input {
-  width: 16px;
-  height: 16px;
-}
-.login__forgot {
-  color: var(--white-color);
-}
-.login__forgot:hover {
-  text-decoration: underline;
-}
-.login__button {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: var(--white-color);
-  font-weight: var(--font-medium);
-  cursor: pointer;
-  margin-bottom: 2rem;
-}
-.login__register {
-  text-align: center;
-}
-.login__register a {
-  color: var(--white-color);
-  font-weight: var(--font-medium);
-}
-.login__register a:hover {
-  text-decoration: underline;
-}
-
-/* Input focus move up label */
-.login__input:focus + .login__label {
-  top: -12px;
-  font-size: var(--small-font-size);
-}
-
-/* Input focus sticky top label */
-.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
-  top: -12px;
-  font-size: var(--small-font-size);
-}
-
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
-@media screen and (min-width: 576px) {
-  .login {
-    justify-content: center;
-  }
-  .login__form {
-    width: 432px;
-    padding: 4rem 3rem 3.5rem;
-    border-radius: 1.5rem;
-  }
-  .login__title {
-    font-size: 3rem;
-  }
 }
