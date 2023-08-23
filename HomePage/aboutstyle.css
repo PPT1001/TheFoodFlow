@@ -42,7 +42,7 @@
     border-radius: 15px;
     width: 85px;
   }
-  /* Change color of dropdown links on hover */
+  /* Change color of dropdown links on hover here*/
 .dropdown-content a:hover {
     background-color:rgb(38, 190, 38);
     color:white;
