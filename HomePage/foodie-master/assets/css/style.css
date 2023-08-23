@@ -491,6 +491,7 @@ body.active { overflow: hidden; }
   color: rgb(38, 190, 38);
   border: 1px solid rgb(38, 190, 38);
   margin-left: 23.5px;
+  padding: 10px 15px;
 }
 
 
