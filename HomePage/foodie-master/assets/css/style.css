@@ -475,6 +475,24 @@ body.active { overflow: hidden; }
   color: var(--white);
 }
 
+.navbar-login {
+  color: var(--rich-black-fogra-29);
+  font-size: var(--fs-4);
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-500);
+  padding: 10px 15px;
+  margin-left: 25px;
+  /* transition: var(--transition-1); */
+}
+
+.navbar-login:is(:hover, :focus) { 
+  background-color: none;
+  border-radius: 20px;
+  color: rgb(38, 190, 38);
+  border: 1px solid rgb(38, 190, 38);
+  margin-left: 23.5px;
+}
+
 
 
 
