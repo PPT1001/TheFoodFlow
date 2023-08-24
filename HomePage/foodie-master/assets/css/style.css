@@ -1945,9 +1945,14 @@ textarea.input-field {
   margin-top: 10px;
 }
 
+
+.explore a {
+  color: white;
+}
+
 a {
   font-size: 12px;
-  color: white;
+  color: grey;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
