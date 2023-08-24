@@ -41,7 +41,7 @@ body{
     font-family: var(--font-family);
     font-size: var(--font-size-sm);
     color: var(--light-color-alt);
-    background-color: var(--primary-background-color);
+    background-color: white;
     letter-spacing: 1px;
     transition: background-color .25s,color .25s;
 }
@@ -388,13 +388,15 @@ body.light-theme{
     gap: var(--gap);
     font-size: var(--font-size-xsm);
     margin-bottom: 1rem;
+    color: black;
 }
 
 .article-data-spacer{
     width: .5rem;
     height: .5rem;
-    background-color: var(--light-color-alt);
+    background-color: black;
     transform: rotate(45deg);
+    color: black;
 }
 
 .title{
@@ -660,7 +662,9 @@ body.light-theme{
 }
 
 .blog-post-title{
-    font-size: clamp(3rem, 5vw, 6rem); 
+    font-size: 50px; 
+    margin: 0 50px;
+    color: black;
 }
 
 .blog-post-data .article-data{
@@ -680,6 +684,7 @@ body.light-theme{
     display: flex;
     flex-direction: column;
     gap: var(--gap);
+    color: black;
 }
 
 .quote{
