@@ -6,7 +6,7 @@
     --light-color: #fff;
     --light-color-alt: #afb6cd;
     --primary-background-color: #141713;
-    --secondary-background-color: hsl(120, 100%, 25%);
+    --secondary-background-color: hsl(120, 64%, 42%);
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
     --gradient-color: linear-gradient(
@@ -143,12 +143,13 @@ i{
     gap: var(--gap);
     font-size: var(--font-size-xsm);
     margin-bottom: 1rem;
+    color: orange;
 }
 
 .article-data-spacer{
     width: .5rem;
     height: .5rem;
-    background-color: var(--light-color-alt);
+    background-color: orange;
     transform: rotate(45deg);
 }
 
@@ -160,9 +161,14 @@ i{
     font-size: var(--font-size-md);
 }
 
+.article-description {
+    color: orange;
+}
+
 /* Older posts */
 .older-posts-grid-wrapper{
     gap: var(--gap);
+    padding-top: 3.5rem;
 }
 
 .older-posts-article-image-wrapper,
