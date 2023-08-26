@@ -11,40 +11,62 @@
     <!-- Swiper.js styles -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="Blogcontent.css">
+    <link rel="stylesheet" href="../HomePage/foodie-master/assets/css/style.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <nav class="navbar container" id="navbar">
-            <a href="./index.html">
-                <h2 class="logo">NewsFlash</h2>
-            </a>
-            <div class="menu" id="menu">
-                <ul class="list">
-                    <li class="list-item">
-                        <a href="#" class="list-link current">Home</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Categories</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Reviews</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">News</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Membership</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Contact</a>
-                    </li>
-                    
-                </ul>
-            </div>
+    <header class="header" data-header>
+        <div class="container">
+        
+        <h1>
+            <a href="index.html" class="logo">
+            <img src="../../Images/logo.jpg"></a>
+        </h1>
 
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+
+            <li class="nav-item">
+                <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../about.html" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../../ShopPage/foodie-master/index.html" class="navbar-link" data-nav-link>Shop</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../contact.html" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+
+            </ul>
         </nav>
+
+        <div class="header-btn-group">
+            <form action="../../REGISTER/packages.html">
+            <button class="btn btn-hover">Login</a>
+            </button>
+            </form>
+        <form action="../../REGISTER/packages.html">
+            <button class="btn btn-hover">Signup</a>
+            </button>
+            </form>
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+            </button>
+        </div>
+
+        </div>
     </header>
 
 
@@ -152,98 +174,102 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer section">
-        <div class="footer-container container d-grid">
-            
-            <div class="company-data">
-                <a href="./index.html">
-                    <h2 class="logo">NewsFlash</h2>
+    <!-- #FOOTER-->
+
+    <footer class="footer">
+
+        <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+        <div class="container">
+
+            <div class="footer-brand">
+
+            <a href="" class="logo">FoodFlow<span class="span">.</span></a>
+
+            <p class="footer-text">
+                Connecting surplus to those in need, one meal at a time.
+            </p>
+
+            <ul class="social-list">
+
+                <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
                 </a>
-                <p class="company-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iure. Harum, animi dolores, nam, ad magni expedita.</p>
-                <ul class="list social-media">
-                    <li class="list-item">
-                        <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link"><i class="ri-pinterest-line"></i></a>
-                    </li>
-                </ul>
-                <span class="copyright-notice">&copy;2021 NewsFlash. All rights reserved.</span>
+                </li>
+
+                <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                </li>
+
+                <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                </li>
+
+                <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+                </li>
+
+            </ul>
+
             </div>
 
-            <div>
-                <h6 class="title footer-title">Categories</h6>
-                <ul class="footer-list list">
-                    <li class="list-item">
-                        <a href="#" class="list-link">Travel</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Food</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Technology</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Health</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Nature</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Fitness</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="footer-list">
 
-            <div>
-                <h6 class="title footer-title">Useful links</h6>
-                <ul class="footer-list list">
-                    <li class="list-item">
-                        <a href="#" class="list-link">Home</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Elements</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Tags</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Authors</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Membership</a>
-                    </li>
-                </ul>
-            </div>
+            <li>
+                <p class="footer-list-title">Quick Links</p>
+            </li>
 
-            <div>
-                <h6 class="title footer-title">Company</h6>
-                <ul class="footer-list list">
-                    <li class="list-item">
-                        <a href="#" class="list-link">Contact us</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">F.A.Q</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Careers</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Authors</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Memberships</a>
-                    </li>
-                </ul>
-            </div>
+            <li>
+                <p class="footer-list-item"><a href="#about">About Us</a></p>
+            </li>
+
+            <li>
+                <p class="footer-list-item"><a href="">Shop</a></p>
+            </li>
+
+            <li>
+                <address class="footer-list-item"><a href="#blog">Blog</a></address>
+            </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+            <li>
+                <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+                <p class="footer-list-item">+94 (11) 123-4567</p>
+            </li>
+
+            <li>
+                <p class="footer-list-item">Info@thefoodflow.com</p>
+            </li>
+
+            <li>
+                <p class="footer-list-item">100, Heaven Street, Colombo</p>
+            </li>
+
+            </ul>
+
         </div>
+        </div>
+
+        <div class="footer-bottom">
+        <div class="container">
+            <p class="copyright-text">
+            &copy; 2023 <a href="#" class="copyright-link">FoodFlow</a> All Rights Reserved.
+            </p>
+        </div>
+        </div>
+
     </footer>
 
     <!-- Swiper.js -->
