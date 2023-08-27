@@ -1,29 +1,131 @@
-.row{
-    padding: 50px;
+.container{
+    position: fixed;
+    margin-left: 150px;
+
 }
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-    
+.contact{
+    width: 75%;
+    background-image:  hsl(0, 0%, 93%);
+    border-radius: 6px;
+    padding: 20px 50px 30px 50px;
+    box-shadow: 0 5px 10px black;
+    margin-left: 180px;
 }
-form .leftcolumn{
-    width: 50%;
-    float: left;
-    padding: 25px 35px 25px 35px;
+.contact .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-form .rightcolumn{
-    width: 50%;
-    float: left;
-    padding: 25px 35px 25px 35px;
+.contact .content .left-side{
+    width:35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
 }
-form input, textarea{
- border: 2px solid black;
- border-radius: 4px;
- color: black;
+.contact .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: hsl(0, 0%, 93%);
 }
-form label{
+.content .left-side .details{
+   margin: 14px;
+   text-align: center;
+
+}
+.content .left-side .details ion-icon{
+    font-size: 40px;
+    color: hsl(120, 100%, 25%);
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+    font-size: 14px;
     color: black;
-    font-family: var( --ff-rubik);
+}
+.contact .content .right-side{
+    width:50%;
+    margin-left: 75px;
+    align-items: center;
+    justify-items: center;
+    color: black;
+    font-family:'Rubik',sans-serif ;
+}
+.content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Roboto',sans-serif;
+    color: hsl(28, 100%, 58%);
+}
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    font-size:16px;
+    background: hsl(0, 0%, 87%);;
+    border-radius: 10px;
+    padding: 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 100px;
+}
+.right-side .input-box textarea{
+    padding-top: 6px;
+}
+.right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+    color: white;
 }
 
+.overlay .close {
+    display: inline;
+    transition: all 200ms;
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+  }
+  .overlay .close:hover {
+    color: #06D85F;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:200px;
+    height: 50px;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    margin: 70px auto;
+    background: hsl(0, 0%, 87%);
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    font-family: "Rubik",sans-serif;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
