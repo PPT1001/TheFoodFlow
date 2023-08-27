@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     addToCartButtons.forEach(button => {
         button.addEventListener("click", function() {
             const product = this.parentElement.parentElement.querySelector(".product-name").textContent;
-            const maxQuantity = 
             const price = parseFloat(this.parentElement.parentElement.querySelector(".product-price").getAttribute("value"));
             addToCart(product, price);
         });
