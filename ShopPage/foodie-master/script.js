@@ -83,10 +83,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateSubtotal(row, price, quantity) {
 
+        const maxQuantity = parseFloat(document.getElementById("max-quantity").innerHTML);
         if (quantity <= 0){
             quantity = 1;
             const quantityIn = row.querySelector("input[type='number']");
             quantityIn.value = 1;
+        } 
+        if (quantity > maxQuantity){
+            quantity = maxQuantity;
+            const quantityIn = row.querySelector("input[type='number']");
+            quantityIn.value = maxQuantity;
         }
         const subtotalCell = row.querySelector("td:nth-child(4)");
         const newSubtotal = price * quantity;
