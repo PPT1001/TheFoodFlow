@@ -3,6 +3,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const cartTable = document.querySelector("#cart tbody");
     const totalCell = document.querySelector("#total");
     const clearCartButton = document.querySelector("#clear-cart");
+    const cartIcon = document.getElementsByClassName("search-btn")[0];
+    const cartCloseIcon = document.getElementsByClassName("close-btn")[0];
+
+    cartIcon.addEventListener("click", function() {
+        document.getElementById("cart").classList.add("active");        
+    });
+    cartCloseIcon.addEventListener("click", function() {
+        document.getElementById("cart").classList.remove("active");        
+    });
 
     addToCartButtons.forEach(button => {
         button.addEventListener("click", function() {
@@ -31,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function createNewCartRow(product, price) {
         const row = document.createElement("tr");
-        row.setAttribute("data-product", product);
+        row.setAttribute("value", product);
 
         const productCell = document.createElement("td");
         productCell.textContent = product;

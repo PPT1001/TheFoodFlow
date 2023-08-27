@@ -96,7 +96,34 @@
       <button class="search-btn">
         <ion-icon name="cart-outline" style="font-size: 30px;"></ion-icon>
       </button>
+    
+     <!-- cart -->
 
+      <table id="cart">
+          <thead>
+            <button class="close-btn">
+              <ion-icon name="close" style="font-size: 30px;"></ion-icon>
+            </button>
+              <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Subtotal</th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+              <tr>
+                  <th colspan="3">Total</th>
+                  <th id="total">0</th>
+              </tr>
+              <tr>
+                <th><button id="clear-cart">Clear Cart</button>
+                <button id="">Buy now</button></th>
+              </tr>
+          </tfoot>
+      </table>
+      
     </div>
   </header>
       <!-- 
@@ -849,29 +876,7 @@
       </section>
 
 
-      <!-- cart -->
 
-      <table id="cart">
-          <thead>
-              <tr>
-                  <th>Product</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                  <th>Subtotal</th>
-              </tr>
-          </thead>
-          <tbody></tbody>
-          <tfoot>
-              <tr>
-                  <th colspan="3">Total</th>
-                  <th id="total">0</th>
-              </tr>
-              <tr>
-                <th><button id="clear-cart">Clear Cart</button>
-                <button id="">Buy now</button></th>
-              </tr>
-          </tfoot>
-      </table>
 
     <script src="script.js"></script>
 

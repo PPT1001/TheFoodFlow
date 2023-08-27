@@ -1341,6 +1341,18 @@ body {
   padding: 20px;
 }
 
+#cart {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  width: 55%;
+  left: 3%;
+}
+
+#cart.active{
+  visibility: visible;
+}
+
 h1 {
   text-align: center;
 }
