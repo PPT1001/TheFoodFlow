@@ -3,12 +3,12 @@ header{
 }
 
 main {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(109.6deg, rgb(5, 85, 84) 11.2%, rgb(64, 224, 208) 91.1%);
+    background: linear-gradient(109.6deg,hsl(120, 100%, 25%) 11.2%, hsl(120, 100%, 75%) 91.1%);
 }
 
 .logincontainer {
@@ -41,7 +41,7 @@ main {
     position: absolute;
     width: 80px;
     height: 200px;
-    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    background: linear-gradient(to right, hsl(120, 100%, 25%), hsl(120, 100%, 75%));
     border-radius: 40px;
 }
 
@@ -51,9 +51,9 @@ main {
     position: absolute;
     height: 450px;
     width: 220px;
-    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    background: linear-gradient(to right, hsl(120, 100%, 25%), hsl(120, 100%, 75%));
     border-radius: 200px;
-    border: 30px solid #e2c5e2;
+    border: 30px solid black;
 }
 
 .design .pill-3 {
@@ -62,7 +62,7 @@ main {
     position: absolute;
     height: 200px;
     width: 100px;
-    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    background: linear-gradient(to right, hsl(120, 100%, 25%), hsl(120, 100%, 75%));
     border-radius: 70px;
 }
 
@@ -72,7 +72,7 @@ main {
     position: absolute;
     height: 300px;
     width: 120px;
-    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    background: linear-gradient(to right, hsl(120, 100%, 25%), hsl(120, 100%, 75%));
     border-radius: 70px;
 }
 
@@ -88,6 +88,7 @@ main {
 
 .login h3.title {
     margin: 15px 0;
+    color: black;
 }
 
 .text-input {
@@ -122,18 +123,19 @@ main {
     width: 68%;
     padding: 10px;
     color: white;
-    background: linear-gradient(109.6deg, rgb(5, 85, 84) 11.2%, rgb(64, 224, 208) 91.1%);
+    background: linear-gradient(109.6deg, hsl(120, 100%, 25%) 11.2%, hsl(120, 100%, 75%) 91.1%);
     border: none;
     border-radius: 20px;
     cursor: pointer;
     margin-top: 10px;
 }
 
-a {
-    color: #9a9a9a;
+.login a {
+    color: hsl(28, 100%, 58%);
     cursor: pointer;
     user-select: none;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a.forgot {
@@ -148,7 +150,6 @@ a.forgot {
 }
 
 .create i {
-    color: #9a9a9a;
     margin-left: 10px;
 }
 

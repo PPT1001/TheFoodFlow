@@ -13,7 +13,7 @@
         115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
     --transparent-light-color: rgba(255,255,255,.05);
     --transparent-dark-color: rgba(0,0,0,.75);
-    --font-family: 'Poppins', sans-serif;
+    --font-family: 'Rubik', sans-serif;
     --font-size-xsm: 1.2rem;
     --font-size-sm: 1.6rem;
     --font-size-md: 2.4rem;
@@ -41,7 +41,7 @@ html{
 
 body{
     font-family: var(--font-family);
-    font-size: var(--font-size-sm);
+    font-size: 1.6rem;
     color: var(--light-color-alt);
     background-color: var(--primary-background-color);
     letter-spacing: 1px;
@@ -211,7 +211,25 @@ i{
 .newsletter-description{
     margin-bottom: 3rem;
 }
-
+.navbar-login {
+    color: hsl(210, 26%, 7%);
+    font-size: 1.4rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin-left: 25px;
+    /* transition: var(--transition-1); */
+  }
+  
+  .navbar-login:is(:hover, :focus) { 
+    background-color: none;
+    border-radius: 20px;
+    color: rgb(38, 190, 38);
+    border: 1px solid rgb(38, 190, 38);
+    margin-left: 23.5px;
+    padding: 10px 15px;
+  }
+  
 @media screen and (min-width: 700px) {
 
     .trending-news-box{
