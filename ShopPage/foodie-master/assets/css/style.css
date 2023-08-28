@@ -1449,11 +1449,9 @@ button.close-btn {
   position: absolute;
   top: 5px;
   right: 5px;
-}
-
-#close-btn {
   display: block;
 }
+
 
 button.close-btn ion-icon {
   font-size: 30px;
