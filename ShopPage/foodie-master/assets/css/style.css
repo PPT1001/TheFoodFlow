@@ -1397,16 +1397,10 @@ body {
 #cart {
   display: none;
   position: absolute;
-<<<<<<< HEAD
   top: 100%;
   width: 60%;
   max-height: 70vh;
   left: 0%;
-=======
-  top: 100%; /* Adjust this value to position it lower */
-
-  width: 44%;
->>>>>>> 8e1077f06739f6d5466387790fe0916778a441e0
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
