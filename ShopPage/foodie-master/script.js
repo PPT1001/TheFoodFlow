@@ -5,12 +5,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const clearCartButton = document.querySelector("#clear-cart");
     const cartIcon = document.getElementsByClassName("search-btn")[0];
     const cartCloseIcon = document.getElementsByClassName("close-btn")[0];
+    const orderBtn = document.getElementsByClassName("add-to-cart");
+
+    for (let index = 0; index < orderBtn.length; index++) {
+        orderBtn[index].addEventListener("click", function() {
+            document.getElementById("cart").classList.add("active");
+        });
+    }
 
     cartIcon.addEventListener("click", function() {
         document.getElementById("cart").classList.add("active");        
     });
     cartCloseIcon.addEventListener("click", function() {
-        document.getElementById("cart").classList.remove("active");        
+        document.getElementById("cart").classList.remove("active");
+        document.getElementsByClassName("close-btn")[0].classList.add("activate");
+        
     });
 
     addToCartButtons.forEach(button => {

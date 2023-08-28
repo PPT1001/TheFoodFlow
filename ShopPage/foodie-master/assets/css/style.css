@@ -1397,13 +1397,34 @@ body {
 #cart {
   display: none;
   position: absolute;
-  top: 100%; /* Adjust this value to position it lower */
-
-  width: 44%;
+  top: 100%;
+  width: 60%;
+  max-height: 70vh;
+  left: 0%;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+@keyframes cartX {
+  0% {
+    transform: translateX(-75px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes cartXe {
+  100% {
+    transform: translateX(-75px);
+  }
+  0% {
+    transform: translateX(0px);
+  }
 }
 /* #cart {
   display: none;
@@ -1418,7 +1439,13 @@ body {
 } */
 
 #cart.active {
+  animation: cartX 2s ease-in-out;
+  left: 55px;
   display: block;
+}
+
+.close-btn.activate{
+  animation: cartXe 2s ease-in-out;
 }
 
 table {
