@@ -73,4 +73,9 @@ let lastScrollPos = 0;
 //     deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
 //   }
 
+<<<<<<< HEAD
 // });
+=======
+
+
+>>>>>>> 8e1077f06739f6d5466387790fe0916778a441e0
