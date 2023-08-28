@@ -136,3 +136,7 @@ body{
     transition: 0.5s ease;
   }
   .btn-hover:is(:hover, :focus)::after { --scale: 500; }*/
+
+  .navbar {
+    font-family: var(--ff-rubik);
+  }

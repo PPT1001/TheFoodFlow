@@ -26,6 +26,25 @@
     --item-min-height-md: 30rem;
     --darkgreen: hsl(120, 100%, 25%);
     --lightgreen: hsl(120, 100%, 75%);
+
+
+/**
+   * typography
+   */
+
+   --ff-shadows-into-light: 'Shadows Into Light', cursive;
+   --ff-roboto: 'Roboto', sans-serif;
+   --ff-rubik: 'Rubik', sans-serif;
+ 
+   --fs-1: 3.2rem;
+   --fs-2: 2.2rem;
+   --fs-3: 1.8rem;
+   --fs-4: 1.4rem;
+   --fs-5: 1.2rem;
+ 
+   --fw-500: 500;
+   --fw-600: 600;
+   --fw-700: 700;
 }
 
 /* Base styles */
@@ -129,6 +148,7 @@ i{
     z-index: 10;
 }
 
+
 .article-data-container{
     width: 100%;
     position: absolute;
@@ -164,10 +184,17 @@ i{
 
 .article-title{
     font-size: var(--font-size-md);
+    font-family: var(--ff-rubik);
 }
 
 .article-description {
     color: orange;
+    font-family: var(--ff-rubik);
+}
+
+.article-description:hover{
+    color: var(--light-color);
+    transform: 1s ease-in-out;
 }
 
 /* Older posts */
