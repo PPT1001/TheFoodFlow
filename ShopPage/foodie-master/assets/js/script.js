@@ -74,13 +74,3 @@ window.addEventListener("scroll", function () {
 
 });
 
-  // Function to display a pop-up message
-  function showPopupMessage() {
-    alert("Your item has been added to the cart");
-  }
-
-  // Attach a click event listener to all "Order Now" buttons
-  var orderButtons = document.querySelectorAll(".add-to-cart");
-  for (var i = 0; i < orderButtons.length; i++) {
-    orderButtons[i].addEventListener("click", showPopupMessage);
-  }
