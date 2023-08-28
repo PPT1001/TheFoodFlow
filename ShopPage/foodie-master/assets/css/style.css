@@ -1338,7 +1338,7 @@ textarea.input-field {
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0px;
 }
 
 /* #cart {
@@ -1393,17 +1393,29 @@ body {
 } */
 
 
+
 #cart {
   display: none;
   position: absolute;
-  top: 100%;
-  width: 60%;
-  left: 3%;
+  top: 100%; /* Adjust this value to position it lower */
+
+  width: 44%;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+/* #cart {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 44%;
+  left: 3%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+} */
 
 #cart.active {
   display: block;
@@ -1437,6 +1449,10 @@ button.close-btn {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+#close-btn {
+  display: block;
 }
 
 button.close-btn ion-icon {
