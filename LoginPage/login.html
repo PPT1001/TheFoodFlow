@@ -16,7 +16,9 @@
   <!-- google font link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
 
 </head>
 
@@ -26,7 +28,7 @@
 
   <header class="header" data-header>
     <div class="container">
-    
+
       <h1>
         <a href="index.html" class="logo">
           <img src="../Images/logo.jpg"></a>
@@ -66,8 +68,8 @@
         <button class="btn btn-hover">Login</a>
           </button>
         </form>-->
-      <form action="../../REGISTER/packages.html">
-        <button class="btn btn-hover">Signup</a>
+        <form action="../../REGISTER/packages.html">
+          <button class="btn btn-hover">Signup</a>
           </button>
         </form>
         <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
@@ -81,47 +83,50 @@
   </header>
 
   <!-- Login -->
-    <main>
-        <div class="logincontainer">
-            <div class="design">
-                <div class="pill-1 rotate-45"></div>
-                <div class="pill-2 rotate-45"></div>
-                <div class="pill-3 rotate-45"></div>
-                <div class="pill-4 rotate-45"></div>
-            </div>
-            <div class="login">
-                <h3 class="title">User Login</h3>
-                <div class="text-input">
-                    <i class="ri-user-fill"></i>
-                    <input type="text" placeholder="Username">
-                </div>
-                <div class="text-input">
-                    <i class="ri-lock-fill"></i>
-                    <input type="password" placeholder="Password">
-                </div>
-                <button class="btn btn-hover">LOGIN</button>
-                <a href="#" class="forgot">Forgot Username/Password?</a>
-                <div class="create">
-                    <a href="/REGISTER/packages.html">Create Your Account</a>
-                    <i class="ri-arrow-right-fill"></i>
-                </div>
-            </div>
+  <main>
+    <div class="logincontainer">
+      <div class="design">
+        <div class="pill-1 rotate-45"></div>
+        <div class="pill-2 rotate-45"></div>
+        <div class="pill-3 rotate-45"></div>
+        <div class="pill-4 rotate-45"></div>
+      </div>
+      <div class="login">
+        <h3 class="title">User Login</h3>
+        <div class="text-input">
+          <i class="ri-user-fill"></i>
+          <form id="login-form">
+            <input type="text" placeholder="Username" id="email" name="email">
         </div>
-    </main>
+        <div class="text-input">
+          <i class="ri-lock-fill"></i>
+          <input type="password" placeholder="Password" id="passwordHash" name="passwordHash">
+        </div>
+        <input type="submit" class="btn btn-hover"></input>
+        <a href="#" class="forgot">Forgot Username/Password?</a>
+        <div class="create">
+          <a href="/REGISTER/packages.html">Create Your Account</a>
+          <i class="ri-arrow-right-fill"></i>
+        </div>
+        </form>
+      </div>
+    </div>
+  </main>
 
   <!-- #FOOTER-->
 
   <footer class="footer">
 
-    <div class="footer-top" style="background-image: url('/HomePage/foodie-master/assets/images/footer-illustration.png')">
+    <div class="footer-top"
+      style="background-image: url('/HomePage/foodie-master/assets/images/footer-illustration.png')">
       <div class="container">
 
         <div class="footer-brand">
 
-        <h1>
+          <h1>
             <a href="/HomePage/foodie-master/index.html" class="logo">
-            <img src="../Images/logo.jpg"></a>
-        </h1>
+              <img src="../Images/logo.jpg"></a>
+          </h1>
           <p class="footer-text">
             Connecting surplus to those in need, one meal at a time.
           </p>
@@ -129,7 +134,8 @@
           <ul class="social-list">
 
             <li>
-              <a href="https://www.facebook.com/people/The-FoodFlow/61550351533404/" target="_blank" class="social-link">
+              <a href="https://www.facebook.com/people/The-FoodFlow/61550351533404/" target="_blank"
+                class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
@@ -216,7 +222,7 @@
   </a>
 
   <!-- custom js link-->
-  <script src="../HomePage/foodie-master/assets/js/script.js" defer></script>
+  <script src="login.js" defer></script>
 
   <!--ionicon link-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
