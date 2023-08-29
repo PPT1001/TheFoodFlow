@@ -46,6 +46,7 @@ window.addEventListener("scroll", function () {
 
 
 
+
 /**
  * move cycle on scroll
  */
@@ -73,4 +74,5 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
 

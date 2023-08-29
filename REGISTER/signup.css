@@ -1,8 +1,5 @@
 body{
-  color: var(--rich-black-fogra-29);
-  font-size: var(--fs-4);
   font-family: var(--ff-rubik);
-  font-weight: var(--fw-500);
   padding: 10px 15px;
   
 }
@@ -136,3 +133,7 @@ body{
     transition: 0.5s ease;
   }
   .btn-hover:is(:hover, :focus)::after { --scale: 500; }*/
+
+  .navbar {
+    font-family: var(--ff-rubik);
+  }
