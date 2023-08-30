@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.querySelector("#submit-button");
 
-
-
+    
+    
     submitButton.addEventListener("click", function() {
 
-        
+    
+
         const productname = document.querySelector("#product-name").value;
         alert("Product Name Added");
         const restaurantname = document.querySelector("#restaurant-name").value;
@@ -23,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
             "quantity": quantity,
             "product-type": producttype,
         };
+
+        alert("Form Data Added");
         createNewProduct(productname, restaurantname, productprice, quantity, producttype);
         alert("Product Added");
     });
-
-
 
 
 
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         image.alt = "Wendy's Chicken";
         image.classList.add('w-100');
 
-        
+        alert("Image Added");
         const badge = document.createElement('div');
         badge.classList.add('badge');
         badge.id = 'max-quantity';
