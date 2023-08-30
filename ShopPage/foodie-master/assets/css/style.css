@@ -1504,3 +1504,11 @@ button#clear-cart:hover, button#buy-now:hover {
 }
 
 
+th {
+  white-space: nowrap; /* Prevents wrapping onto a new line */
+}
+
+button {
+  display: inline-block; /* Makes the buttons appear inline */
+  margin-right: 10px; /* Adds some spacing between the buttons */
+}
