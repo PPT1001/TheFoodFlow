@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const formData = new FormData(addUserForm);
         const userData = Object.fromEntries(formData.entries());
 
-        const response = await fetch("http://localhost:1338/users/adduser", {
+        const response = await fetch("https://tff-server.vercel.app/users/adduser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
