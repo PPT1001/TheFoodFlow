@@ -69,70 +69,73 @@
           </div>
         </div>
         <!-- End Head -->
-        <h1 class="p-relative">Settings</h1>
+        <h1 class="p-relative">Add Product</h1>
         <div class="settings p-20 bg-white rad-10 m-20">
 
           <!-- Start Settings Box -->
           <div class="p-20 bg-white rad-10">
             <h2 class="mt-0 mb-10">Product Info</h2>
             <p class="mt-0 mb-20 c-grey fs-15">General Information About Your Account</p>
-            <div class="mb-15">
-              <label class="fs-14 c-grey d-block mb-10" for="first">Product Name</label>
-              <input
-                class="b-none border-ccc p-10 rad-6 d-block w-full"
-                type="text"
-                id="first"
-                placeholder="Product Name"
-              />
+            <form id="productForm">
+              <div class="mb-15">
+                <label class="fs-14 c-grey d-block mb-10" for="first">Product Name</label>
+                <input
+                  class="b-none border-ccc p-10 rad-6 d-block w-full"
+                  type="text"
+                  id="product-name"
+                  placeholder="Product Name"
+                />
+              </div>
+              <div class="mb-15">
+                <label class="fs-14 c-grey d-block mb-5" for="last">Product category</label>
+                <input
+                  class="b-none border-ccc p-10 rad-6 d-block w-full"
+                  id="product-type"
+                  type="text"
+                  placeholder="Product category"
+                />
+              </div>
+              <div class="mb-15">
+                <label class="fs-14 c-grey d-block mb-5" for="last">Restaurant Name</label>
+                <input
+                  class="b-none border-ccc p-10 rad-6 d-block w-full"
+                  id="restaurant-name"
+                  type="text"
+                  placeholder="Restaurant Name"
+                />
+              </div>
+              <div class="mb-15">
+                <label class="fs-14 c-grey d-block mb-5" for="last">Product Price</label>
+                <input
+                  class="b-none border-ccc p-10 rad-6 d-block w-full"
+                  id="product-price"
+                  type="number"
+                  placeholder="Product Price"
+                />
+              </div>
+              <div class="mb-15">
+                <label class="fs-14 c-grey d-block mb-5" for="last">Quantity</label>
+                <input
+                  class="b-none border-ccc p-10 rad-6 d-block w-full"
+                  id="quantity"
+                  type="text"
+                  placeholder="Quantity"
+                />
+              </div>
+              <div>
+                <label class="fs-14 c-grey d-block mb-5" for="email">Image</label>
+                <input
+                  class="email b-none border-ccc p-10 rad-6 w-full mr-10"
+                  id="image"
+                  type="email"
+                  value=""
+                  disabled
+                />
+                <a class="c-blue" href="#">Upload</a>
+              </div>
             </div>
-            <div class="mb-15">
-              <label class="fs-14 c-grey d-block mb-5" for="last">Product Type</label>
-              <input
-                class="b-none border-ccc p-10 rad-6 d-block w-full"
-                id="last"
-                type="text"
-                placeholder="Product Type"
-              />
-            </div>
-            <div class="mb-15">
-              <label class="fs-14 c-grey d-block mb-5" for="last">Restaurant Name</label>
-              <input
-                class="b-none border-ccc p-10 rad-6 d-block w-full"
-                id="last"
-                type="text"
-                placeholder="Restaurant Name"
-              />
-            </div>
-            <div class="mb-15">
-              <label class="fs-14 c-grey d-block mb-5" for="last">Product Price</label>
-              <input
-                class="b-none border-ccc p-10 rad-6 d-block w-full"
-                id="last"
-                type="number"
-                placeholder="Product Price"
-              />
-            </div>
-            <div class="mb-15">
-              <label class="fs-14 c-grey d-block mb-5" for="last">Quantity</label>
-              <input
-                class="b-none border-ccc p-10 rad-6 d-block w-full"
-                id="last"
-                type="text"
-                placeholder="Quantity"
-              />
-            </div>
-            <div>
-              <label class="fs-14 c-grey d-block mb-5" for="email">Image</label>
-              <input
-                class="email b-none border-ccc p-10 rad-6 w-full mr-10"
-                id="email"
-                type="email"
-                value=""
-                disabled
-              />
-              <a class="c-blue" href="#">Upload</a>
-            </div>
-          </div>
+            <button type="submit" id="submit-button">Submit</button>
+          </form>
           <!-- End Settings Box -->
 
 
@@ -141,5 +144,6 @@
     </div>
 
     <script src="js/script.js" defer></script>
+    <script s></script>
   </body>
 </html>
