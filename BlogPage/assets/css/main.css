@@ -63,7 +63,6 @@ body{
     font-size: 1.6rem;
     color: var(--light-color-alt);
     background-color: var(--primary-background-color);
-    letter-spacing: 1px;
     transition: background-color .25s,color .25s;
 }
 
@@ -188,7 +187,7 @@ i{
 }
 
 .article-description {
-    color: orange;
+    color:hsl(23, 49%, 82%);
     font-family: var(--ff-rubik);
 }
 
