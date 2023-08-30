@@ -35,7 +35,7 @@
                     <input type="number" id="Mnumber" name="Mnumber" placeholder="    Eg: 0112562564" ><br><br>
                     
                     <label for="password">Password: </label><br>
-                    <input type="password" id="password" name="password" placeholder="    Eg: ABC_1234" ><br><br>
+                    <input type="password" id="password" name="password" placeholder="    Eg: ABC_1234" ><span id="showPassword" onclick="togglePassword()">Show Password</span><br><br>
                     
                     <label for="Cpassword">Confirm Password:</label><br>
                     <input type="password" id="Cpassword" name="Cpassword" placeholder="    Eg: ABC_1234" ><br><br>
@@ -103,6 +103,19 @@
         else if(password !=cpassword || cpassword==null || cpassword==""){
             alert("confirm password does not match");
             return false;
+        }
+    }
+
+    function togglePassword() {
+        var passwordField = document.getElementById("password");
+        var showPasswordButton = document.getElementById("showPassword");
+
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            showPasswordButton.textContent = "Hide Password";
+        } else {
+            passwordField.type = "password";
+            showPasswordButton.textContent = "Show Password";
         }
     }
 </script>
