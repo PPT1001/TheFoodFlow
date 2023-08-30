@@ -736,7 +736,14 @@ body.active { overflow: hidden; }
 .about .btn { margin-inline: auto; }
 
 
-
+.delivery-content ion-icon,
+.delivery-content .section-title{
+  animation:arrow 2s infinite;
+}
+@keyframes arrow{
+  from{color: black;}
+  to{color: rgb(38, 190, 38);;}
+}
 
 
 /*-----------------------------------*\
