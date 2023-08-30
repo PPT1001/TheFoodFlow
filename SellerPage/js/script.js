@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.querySelector("#submit-button");
 
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         createNewProduct(productname, restaurantname, productprice, quantity, producttype);
         alert("Product Added");
     });
+    
 
 
 
