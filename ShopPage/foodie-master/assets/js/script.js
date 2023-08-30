@@ -51,7 +51,7 @@ window.addEventListener("scroll", function () {
  * move cycle on scroll
  */
 
-const deliveryBoy = document.querySelector("[data-delivery-boy]");
+try{const deliveryBoy = document.querySelector("[data-delivery-boy]");
 
 let deliveryBoyMove = -80;
 let lastScrollPos = 0;
@@ -74,5 +74,10 @@ window.addEventListener("scroll", function () {
   }
 
 });
+}catch(e){
+  console.log(e);
+}
+
+
 
 
