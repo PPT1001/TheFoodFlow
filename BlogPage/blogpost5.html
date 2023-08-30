@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsFlash | Post</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/HomePage/foodie-master/logo.svg">
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Swiper.js styles -->
@@ -50,15 +50,19 @@
             <li class="nav-item">
                 <a href="../HomePage/contact.html" class="navbar-link" data-nav-link>Contact Us</a>
             </li>
-
+            <li class="nav-item">
+                <a href="../LoginPage/login.html" class="navbar-login" data-nav-link>
+                    <p>Log in</p>
+                </a>
+              </li>
             </ul>
         </nav>
 
         <div class="header-btn-group">
-            <form action="../../REGISTER/packages.html">
+            <!--<form action="../../REGISTER/packages.html">
             <button class="btn btn-hover">Login</a>
             </button>
-            </form>
+            </form>-->
         <form action="../../REGISTER/packages.html">
             <button class="btn btn-hover">Signup</a>
             </button>
@@ -201,7 +205,7 @@
 
     <footer class="footer">
 
-        <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+        <div class="footer-top" style="background-image: url('/HomePage/foodie-master/assets/images/footer-illustration.png')">
         <div class="container">
 
             <div class="footer-brand">
@@ -256,32 +260,32 @@
             </li>
 
             <li>
-                <p class="footer-list-item"><a href="">Shop</a></p>
+                <p class="footer-list-item"><a href="/ShopPage/foodie-master/index.html">Shop</a></p>
             </li>
 
             <li>
-                <address class="footer-list-item"><a href="../../BlogPage/Blog.html">Blog</a></address>
+                <address class="footer-list-item"><a href="Blog.html">Blog</a></address>
             </li>
 
             </ul>
 
             <ul class="footer-list">
 
-            <li>
-                <p class="footer-list-title">Contact Us</p>
-            </li>
-
-            <li>
-                <p class="footer-list-item">+94 (11) 123-4567</p>
-            </li>
-
-            <li>
-                <p class="footer-list-item">Info@thefoodflow.com</p>
-            </li>
-
-            <li>
-                <p class="footer-list-item">100, Heaven Street, Colombo</p>
-            </li>
+                <li>
+                    <p class="footer-list-title"><a href="/HomePage/contact.html"> Contact Us</a></p>
+                  </li>
+        
+                  <li>
+                    <p class="footer-list-item"><a href="tel:+94771922950">+94771922950</a></p>
+                  </li>
+        
+                  <li>
+                    <p class="footer-list-item"><a href="mailto: help.foodflow@gmail.com">help.foodflow@gmail.com</a></p>
+                  </li>
+        
+                  <li>
+                    <p class="footer-list-item">100, Heaven Street, Colombo</p>
+                  </li>
 
             </ul>
 
@@ -291,12 +295,26 @@
         <div class="footer-bottom">
         <div class="container">
             <p class="copyright-text">
-            &copy; 2023 <a href="#" class="copyright-link">FoodFlow</a> All Rights Reserved.
+            &copy; 2023 <a href="/HomePage/foodie-master/index.html" class="copyright-link">FoodFlow</a> All Rights Reserved.
             </p>
         </div>
         </div>
 
     </footer>
+     <!-- #BACK TO TOP-->
+
+     <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+        <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    
+    <!-- Custom script -->
+    <script src="assets/js/main.js"></script>
+
+     <!--ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
     <!-- Swiper.js -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
