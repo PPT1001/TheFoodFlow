@@ -1,4 +1,13 @@
+
 document.addEventListener("DOMContentLoaded", function() {
+
+const formData = {
+    "product-name": "Pra",
+    "restaurant-name": "Pragash Restaurant",
+    "product-price": 100,
+    "quantity": 10,
+    "product-type": "Noodles",
+};
 
 const productname = formData["product-name"];
 const restaurantname = formData["restaurant-name"];
