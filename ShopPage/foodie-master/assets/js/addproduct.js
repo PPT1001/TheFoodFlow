@@ -1,12 +1,13 @@
-console.log(formData);
+document.addEventListener("DOMContentLoaded", function() {
 
-import { formData } from "./formData.js";
 
-const productname = formData.get('product-name');
-const restaurantname = formData.get('restaurant-name');
-const productprice = formData.get('product-price');
-const quantity = formData.get('quantity');
-const producttype = formData.get('product-type');
+    import { formData } from '../../../../SellerPage/js/script.js';
+
+const productname = formData["product-name"];
+const restaurantname = formData["restaurant-name"];
+const productprice = formData["product-price"];
+const quantity = formData["quantity"];
+const producttype = formData["product-type"];
 
 createNewProduct(productname, restaurantname, productprice, quantity, producttype);
 
@@ -16,7 +17,6 @@ createNewProduct(productname, restaurantname, productprice, quantity, producttyp
         
     const listItem = document.createElement('li');
 
-    alert("List Created");
 
     const foodMenuCard = document.createElement('div');
     foodMenuCard.classList.add('food-menu-card');
@@ -122,3 +122,5 @@ createNewProduct(productname, restaurantname, productprice, quantity, producttyp
 
     
 }
+
+});
