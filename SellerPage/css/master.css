@@ -938,9 +938,6 @@ ul {
 }
 /* End Projects Page */
 /* Start Courses Page */
-.courses-page {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
 @media (max-width: 767px) {
   .courses-page {
     grid-template-columns: minmax(200px, 1fr);
