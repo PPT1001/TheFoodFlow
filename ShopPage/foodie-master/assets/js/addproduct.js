@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-
-    import { formData } from '../../../../SellerPage/js/script.js';
-
 const productname = formData["product-name"];
 const restaurantname = formData["restaurant-name"];
 const productprice = formData["product-price"];
