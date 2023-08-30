@@ -101,9 +101,6 @@
 
       <table id="cart">
           <thead>
-            <button id="close-btn" class="close-btn">
-              <ion-icon name="close" style="font-size: 30px;"></ion-icon>
-            </button>
               <tr>
                   <th>Product</th>
                   <th>Quantity</th>
@@ -118,8 +115,15 @@
                   <th id="total">0</th>
               </tr>
               <tr>
-                <th><button id="clear-cart">Clear Cart</button>
-                <button id="buy-now">Buy now</button></th>
+                <th>
+                  <button id="clear-cart">Clear Cart</button>
+                  <button id="buy-now">Buy now</button>
+                </th>
+                <th>
+                  <button id="close-cart" class="close-btn">
+                    <ion-icon name="close" style="font-size: 30px;"></ion-icon>
+                  </button>
+                </th>
               </tr>
           </tfoot>
       </table>
