@@ -1166,3 +1166,25 @@ ul {
   }
 }
 /* End Animation */
+
+
+
+.btn-container {
+  white-space: nowrap; /* Prevent button from wrapping to the next line */
+}
+
+.btn {
+  display: inline-block; /* Display buttons in a line */
+  background-color: rgb(38, 190, 38);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #28a428;
+}
