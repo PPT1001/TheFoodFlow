@@ -265,7 +265,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-<<<<<<< HEAD
 
 if (localStorage.getItem("is-loggedin")) {
     document.getElementById("login-btn").remove();
@@ -281,5 +280,3 @@ if (localStorage.getItem("is-loggedin")) {
       window.location.href = "../../../../SellerPage/index.html";
     });
   }
-=======
->>>>>>> 416dccef986191565663ed845e9e6a17d91966b6
