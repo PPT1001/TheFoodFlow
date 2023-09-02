@@ -265,3 +265,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+if (localStorage.getItem("is-loggedin")) {
+    document.getElementById("login-btn").remove();
+    document.getElementById("signup-btn").remove();
+    // document.createElement("a").innerHTML = "Logout"; 
+    const userIcon = document.createElement("ion-icon");
+    userIcon.name="person-circle-outline";
+    userIcon.style.color ='hsl(120, 100%, 25%)';
+    userIcon.style.fontSize ='40px';
+    document.getElementById("User-icon").appendChild(userIcon);
+    userIcon.classList.add("user-icon");
+    document.getElementById("User-icon").addEventListener("click", function() {
+      window.location.href = "../../../../SellerPage/index.html";
+    });
+  }

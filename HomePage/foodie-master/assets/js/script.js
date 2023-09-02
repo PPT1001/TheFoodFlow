@@ -84,6 +84,8 @@ if (localStorage.getItem("is-loggedin")) {
   // document.createElement("a").innerHTML = "Logout"; 
   const userIcon = document.createElement("ion-icon");
   userIcon.name="person-circle-outline";
+  userIcon.style.color ='hsl(120, 100%, 25%)';
+  userIcon.style.fontSize ='80px';
   document.getElementById("User-icon").appendChild(userIcon);
   userIcon.classList.add("user-icon");
   document.getElementById("User-icon").addEventListener("click", function() {
