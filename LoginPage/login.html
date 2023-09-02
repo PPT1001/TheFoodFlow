@@ -95,10 +95,10 @@
         <h3 class="title">User Login</h3><br>
         <form id="login-form" name="loginform" onsubmit="return validate()">
         <div class="text-input">
-            <input type="text" placeholder="Username" id="email" name="email" required>
+            <input type="text" placeholder="Username" id="email" name="email" >
         </div>
         <div class="text-input">
-          <input type="password" placeholder="Password" id="passwordHash" name="passwordHash" required>
+          <input type="password" placeholder="Password" id="passwordHash" name="passwordHash" >
         </div>
         <input type="submit" class="login-btn">
         <a href="#" class="forgot">Forgot Username/Password?</a>
@@ -213,6 +213,7 @@
 
   </footer>
   <script>
+    function validate(){
     var username = document.loginform.email.value;
     var password = document.loginform.passwordHash.value;
 
@@ -224,6 +225,7 @@
             alert("password is required");
             return false; 
         }
+    }
   </script>
 
   <!-- #BACK TO TOP-->
