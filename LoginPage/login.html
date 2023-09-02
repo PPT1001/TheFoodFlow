@@ -92,17 +92,15 @@
         <div class="pill-4 rotate-45"></div>
       </div>
       <div class="login">
-        <h3 class="title">User Login</h3>
+        <h3 class="title">User Login</h3><br>
+        <form id="login-form" name="loginform" onsubmit="return validate()">
         <div class="text-input">
-          <i class="ri-user-fill"></i>
-          <form id="login-form">
-            <input type="text" placeholder="Username" id="email" name="email">
+            <input type="text" placeholder="Username" id="email" name="email" required>
         </div>
         <div class="text-input">
-          <i class="ri-lock-fill"></i>
-          <input type="password" placeholder="Password" id="passwordHash" name="passwordHash">
+          <input type="password" placeholder="Password" id="passwordHash" name="passwordHash" required>
         </div>
-        <input type="submit" class="btn btn-hover"></input>
+        <input type="submit" class="login-btn">
         <a href="#" class="forgot">Forgot Username/Password?</a>
         <div class="create">
           <a href="/REGISTER/packages.html">Create Your Account</a>
@@ -214,6 +212,19 @@
     </div>
 
   </footer>
+  <script>
+    var username = document.loginform.email.value;
+    var password = document.loginform.passwordHash.value;
+
+    if(username==null || username=="" ){
+            alert("User Name is required");
+            return false;
+        }
+        else if(password==null || password==""){
+            alert("password is required");
+            return false; 
+        }
+  </script>
 
   <!-- #BACK TO TOP-->
 
@@ -223,6 +234,7 @@
 
   <!-- custom js link-->
   <script src="login.js" defer></script>
+  <script src="/HomePage/foodie-master/assets/js/script.js"></script>
 
   <!--ionicon link-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
