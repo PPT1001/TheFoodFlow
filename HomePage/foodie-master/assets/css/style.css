@@ -475,6 +475,14 @@ body.active { overflow: hidden; }
   color: var(--white);
 }
 
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline-end: 10px;
+}
+
 .navbar-login {
   color: var(--rich-black-fogra-29);
   font-size: var(--fs-4);
@@ -483,6 +491,7 @@ body.active { overflow: hidden; }
   padding: 10px 15px;
   margin-left: 25px;
   letter-spacing: 0;
+  visibility: visible;
   /* transition: var(--transition-1); */
 }
 
