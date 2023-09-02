@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(result);
         alert(result.status);
 
+
         if (result.status === "Login successful") {
             localStorage.setItem("is-loggedin", true);
             window.location.href = "../SellerPage/index.html";
