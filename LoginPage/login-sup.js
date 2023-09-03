@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (result.status === "Login successful") {
-            localStorage.setItem("is-loggedin", true);
+            localStorage.setItem("is-loggedin-sup", true);
             window.location.href = "../SellerPage/index.html";
         }
     });
