@@ -53,7 +53,7 @@ main {
     width: 220px;
     background: linear-gradient(to right, hsl(120, 100%, 25%), hsl(120, 100%, 75%));
     border-radius: 200px;
-    border: 30px solid black;
+    border: 20px solid black;
 }
 
 .design .pill-3 {
@@ -82,7 +82,7 @@ main {
     flex-direction: column;
     position: relative;
     background: white;
-    padding-right: 20px;
+    justify-content: center;
 }
 
 .login h3.title {
@@ -90,7 +90,7 @@ main {
     color: black;
     align-items: center;
     justify-content: center;
-    padding-left: 110px;
+    text-align: center;
 }
 
 .text-input {
@@ -145,18 +145,14 @@ main {
     cursor: pointer;
     user-select: none;
     text-decoration: none;
-    margin-left: 60px;
     font-family: 'Rubik',sans-serif;
-}
-
-a.forgot {
-    margin-top: 15px;
 }
 
 .create {
     display: flex;
     align-items: center;
     position: absolute;
+    margin-top: 15px;
 }
 
 .create i {
