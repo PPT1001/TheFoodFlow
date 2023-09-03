@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const addUserForm = document.getElementById("login-form");
+    const addUserForm = document.getElementById("login-form-sup");
 
     addUserForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const formData = new FormData(addUserForm);
         const userData = Object.fromEntries(formData.entries());
 
-        const response = await fetch("https://tff-server.vercel.app/customers/login", {
+        const response = await fetch("https://tff-server.vercel.app/users/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (result.status === "Login successful") {
-            // localStorage.setItem("is-loggedin", true);
-            window.location.href = "../ShopPage/foodie-master/index.html";
+            localStorage.setItem("is-loggedin", true);
+            window.location.href = "../SellerPage/index.html";
         }
     });
 })

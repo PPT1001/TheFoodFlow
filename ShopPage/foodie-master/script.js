@@ -1,12 +1,20 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    fetch("https://tff-server.vercel.app/products/getproducts")
+      .then(response => response.json())
+      .then(products => {
+          const productList = document.getElementById("food-menu-list");
+
+          // Loop through the products and create list items for each
+          products.forEach(product => {
+
     const formData = {
-        "product-name": "Pra",
-        "restaurant-name": "- Pragash Restaurant",
-        "product-price": "$" + 100,
-        "quantity": 10,
-        "product-type": "Noodles",
+        "product-name": product.productName,
+        "restaurant-name": "- "+product.restaurantName,
+        "product-price": "$" + product.productPrice,
+        "quantity": product.quantity,
+        "product-type": product.productCategory,
     };
 
     const productname = formData["product-name"];
@@ -127,7 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-
+          });
+        });
 
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
     const cartTable = document.querySelector("#cart tbody");
@@ -146,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const orderBtn = document.getElementsByClassName("add-to-cart");
 
     for (let index = 0; index < orderBtn.length; index++) {
+        alert(index);
         orderBtn[index].addEventListener("click", function () {
             document.getElementById("cart").classList.add("active");
         });
@@ -172,7 +182,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             for (var i = 0; i < cart.length; i++){
                 cart[i][0] = cart[i][0].replace(/"/g, "");
-                alert(cart[i][0]); 
             }
             
             var arrayCart = [localStorage.getItem("product"), parseInt(localStorage.getItem("price")), parseInt(localStorage.getItem("quantity")), parseInt(localStorage.getItem("subtotal")), parseInt(localStorage.getItem("total"))];
