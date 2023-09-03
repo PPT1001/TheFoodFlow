@@ -40,6 +40,7 @@ if (localStorage.getItem("is-loggedin-cus")) {
   document.getElementById("User-icon").appendChild(userIcon);
   userIcon.classList.add("user-icon");
   document.getElementById("User-icon").addEventListener("click", function () {
-      window.location.href = "../../../ShopPage/foodie-master/index.html";
+      window.location.href = "../ShopPage/foodie-master/index.html";
   })
 }
+
