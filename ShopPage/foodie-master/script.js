@@ -1,5 +1,16 @@
 
-document.addEventListener("DOMContentLoaded", function () {   
+// document.addEventListener("DOMContentLoaded", function () {  
+    
+if (document.readyState == "loading") {
+    document.addEventListener("DOMContentLoaded", ready)
+}
+else {
+    ready();
+}
+
+// ready function
+
+function ready(){
 
     fetch("https://tff-server.vercel.app/products/getproducts")
       .then(response => response.json())
@@ -361,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function () {
         storage = JSON.stringify(storage);
         localStorage.setItem("cart", storage);
     }
-});
+};
 
 
 
