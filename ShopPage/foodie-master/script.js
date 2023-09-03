@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {   
 
     fetch("https://tff-server.vercel.app/products/getproducts")
       .then(response => response.json())
@@ -9,135 +9,166 @@ document.addEventListener("DOMContentLoaded", function () {
           // Loop through the products and create list items for each
           products.forEach(product => {
 
-    const formData = {
-        "product-name": product.productName,
-        "restaurant-name": "- "+product.restaurantName,
-        "product-price": "$" + product.productPrice,
-        "quantity": product.quantity,
-        "product-type": product.productCategory,
-    };
+        const formData = {
+            "product-name": product.productName,
+            "restaurant-name": "- "+product.restaurantName,
+            "product-price": "$" + product.productPrice,
+            "quantity": product.quantity,
+            "product-type": product.productCategory,
+        };
 
-    const productname = formData["product-name"];
-    const restaurantname = formData["restaurant-name"];
-    const productprice = formData["product-price"];
-    const quantity = formData["quantity"];
-    const producttype = formData["product-type"];
+        const productname = formData["product-name"];
+        const restaurantname = formData["restaurant-name"];
+        const productprice = formData["product-price"];
+        const quantity = formData["quantity"];
+        const producttype = formData["product-type"];
 
-    createNewProduct(productname, restaurantname, productprice, quantity, producttype);
-
-
-    function createNewProduct(productname, restaurantname, productprice, quantity, producttype) {
+        createNewProduct(productname, restaurantname, productprice, quantity, producttype);
 
 
-        const listItem = document.createElement('li');
+        function createNewProduct(productname, restaurantname, productprice, quantity, producttype) {
 
 
-        const foodMenuCard = document.createElement('div');
-        foodMenuCard.classList.add('food-menu-card');
+            const listItem = document.createElement('li');
 
 
-        const cardBanner = document.createElement('div');
-        cardBanner.classList.add('card-banner');
+            const foodMenuCard = document.createElement('div');
+            foodMenuCard.classList.add('food-menu-card');
 
 
-        const image = document.createElement('img');
-        image.src = './assets/images/food-menu-6.png';
-        image.width = 300;
-        image.height = 300;
-        image.loading = 'lazy';
-        image.alt = "Wendy's Chicken";
-        image.classList.add('w-100');
+            const cardBanner = document.createElement('div');
+            cardBanner.classList.add('card-banner');
 
 
-        const badge = document.createElement('div');
-        badge.classList.add('badge');
-        badge.id = 'max-quantity';
-        badge.textContent = quantity;
+            const image = document.createElement('img');
+            image.src = './assets/images/food-menu-6.png';
+            image.width = 300;
+            image.height = 300;
+            image.loading = 'lazy';
+            image.alt = "Wendy's Chicken";
+            image.classList.add('w-100');
 
 
-        const orderButton = document.createElement('button');
-        orderButton.classList.add('btn', 'food-menu-btn', 'add-to-cart');
-        orderButton.textContent = 'Order Now';
+            const badge = document.createElement('div');
+            badge.classList.add('badge');
+            badge.id = 'max-quantity';
+            badge.textContent = quantity;
 
 
-        cardBanner.appendChild(image);
-        cardBanner.appendChild(badge);
-        cardBanner.appendChild(orderButton);
+            const orderButton = document.createElement('button');
+            orderButton.classList.add('btn', 'food-menu-btn', 'add-to-cart');
+            orderButton.textContent = 'Order Now';
 
 
-        const wrapper = document.createElement('div');
-        wrapper.classList.add('wrapper');
+            cardBanner.appendChild(image);
+            cardBanner.appendChild(badge);
+            cardBanner.appendChild(orderButton);
 
 
-        const category = document.createElement('p');
-        category.classList.add('category');
-        category.textContent = producttype;
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('wrapper');
 
 
-        const ratingWrapper = document.createElement('div');
-        ratingWrapper.classList.add('rating-wrapper');
+            const category = document.createElement('p');
+            category.classList.add('category');
+            category.textContent = producttype;
 
 
-        for (let i = 0; i < 5; i++) {
-            const starIcon = document.createElement('ion-icon');
-            starIcon.name = 'star';
-            ratingWrapper.appendChild(starIcon);
+            const ratingWrapper = document.createElement('div');
+            ratingWrapper.classList.add('rating-wrapper');
+
+
+            for (let i = 0; i < 5; i++) {
+                const starIcon = document.createElement('ion-icon');
+                starIcon.name = 'star';
+                ratingWrapper.appendChild(starIcon);
+            }
+
+
+            const cardTitleProductName = document.createElement('h3');
+            cardTitleProductName.classList.add('h3', 'card-title', 'product-name');
+            cardTitleProductName.textContent = productname;
+
+            const cardTitleRestaurantName = document.createElement('h4');
+            cardTitleRestaurantName.classList.add('restaurant', 'name', 'card-title');
+            cardTitleRestaurantName.textContent = restaurantname;
+
+
+            const priceWrapper = document.createElement('div');
+            priceWrapper.classList.add('price-wrapper');
+
+
+            const priceText = document.createElement('p');
+            priceText.classList.add('price-text');
+            priceText.textContent = 'Price:';
+
+
+            const productPrice = document.createElement('data');
+            productPrice.classList.add('price', 'product-price');
+            productPrice.value = '49.00';
+            productPrice.textContent = productprice;
+
+
+            const delElement = document.createElement('del');
+            delElement.classList.add('del');
+            delElement.textContent = '$59.00';
+
+
+            wrapper.appendChild(category);
+            wrapper.appendChild(ratingWrapper);
+
+            priceWrapper.appendChild(priceText);
+            priceWrapper.appendChild(productPrice);
+            priceWrapper.appendChild(delElement);
+
+            foodMenuCard.appendChild(cardBanner);
+            foodMenuCard.appendChild(wrapper);
+            foodMenuCard.appendChild(cardTitleProductName);
+            foodMenuCard.appendChild(cardTitleRestaurantName);
+            foodMenuCard.appendChild(priceWrapper);
+
+            listItem.appendChild(foodMenuCard);
+
+
+            const menuList = document.getElementById('food-menu-list');
+            menuList.appendChild(listItem)
+
         }
 
-
-        const cardTitleProductName = document.createElement('h3');
-        cardTitleProductName.classList.add('h3', 'card-title', 'product-name');
-        cardTitleProductName.textContent = productname;
-
-        const cardTitleRestaurantName = document.createElement('h4');
-        cardTitleRestaurantName.classList.add('restaurant', 'name', 'card-title');
-        cardTitleRestaurantName.textContent = restaurantname;
-
-
-        const priceWrapper = document.createElement('div');
-        priceWrapper.classList.add('price-wrapper');
-
-
-        const priceText = document.createElement('p');
-        priceText.classList.add('price-text');
-        priceText.textContent = 'Price:';
-
-
-        const productPrice = document.createElement('data');
-        productPrice.classList.add('price', 'product-price');
-        productPrice.value = '49.00';
-        productPrice.textContent = productprice;
-
-
-        const delElement = document.createElement('del');
-        delElement.classList.add('del');
-        delElement.textContent = '$59.00';
-
-
-        wrapper.appendChild(category);
-        wrapper.appendChild(ratingWrapper);
-
-        priceWrapper.appendChild(priceText);
-        priceWrapper.appendChild(productPrice);
-        priceWrapper.appendChild(delElement);
-
-        foodMenuCard.appendChild(cardBanner);
-        foodMenuCard.appendChild(wrapper);
-        foodMenuCard.appendChild(cardTitleProductName);
-        foodMenuCard.appendChild(cardTitleRestaurantName);
-        foodMenuCard.appendChild(priceWrapper);
-
-        listItem.appendChild(foodMenuCard);
-
-
-        const menuList = document.getElementById('food-menu-list');
-        menuList.appendChild(listItem)
-
-    }
-
-          });
+        });
         });
 
+    const menuList = document.getElementById('food-menu-list');
+
+    
+    menuList.addEventListener('click', function (event) {
+        const target = event.target;
+
+        // Check if the clicked element has the 'add-to-cart' class
+        if (target.classList.contains('add-to-cart')) {
+            try {
+                // Log to the console to check if this event handler is being called
+                console.log("Add to Cart clicked");
+
+                const product = target.closest('.food-menu-card').querySelector(".product-name").textContent;
+                const price = parseFloat(target.closest('.food-menu-card').querySelector(".product-price").getAttribute("value"));
+
+                // Log the product and price to ensure they are being retrieved correctly
+                console.log("Product:", product);
+                console.log("Price:", price);
+
+                // Call addToCart function with product and price
+                addToCart(product, price);
+
+                addProductToStorage();
+
+            } catch (error) {
+                // Log any errors to the console
+                console.error("Error:", error);
+            }
+        }
+    });
+    
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
     const cartTable = document.querySelector("#cart tbody");
     const totalCell = document.querySelector("#total");
@@ -166,8 +197,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+
+
     addToCartButtons.forEach(button => {
         button.addEventListener("click", function () {
+            alert("Hello");
             const product = this.parentElement.parentElement.querySelector(".product-name").textContent;
             const price = parseFloat(this.parentElement.parentElement.querySelector(".product-price").getAttribute("value"));
             addToCart(product, price);
