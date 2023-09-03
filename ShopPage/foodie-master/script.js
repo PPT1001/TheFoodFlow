@@ -194,7 +194,6 @@ function ready(){
 
     cartIcon.addEventListener("click", function () {
         document.getElementById("cart").classList.add("active");
-        updateCart();
 
     });
 
@@ -229,10 +228,6 @@ function ready(){
             localStorage.setItem("quantity", 1);
             
             addProductToStorage();
-            updateCart();
-
-
-            
             
 
         });
@@ -250,6 +245,7 @@ function ready(){
         var arrayCart = [localStorage.getItem("product"), parseInt(localStorage.getItem("price")), parseInt(localStorage.getItem("quantity")), parseInt(localStorage.getItem("subtotal")), parseInt(localStorage.getItem("total"))];
         cart.push(arrayCart);
         localStorage.setItem("cart", JSON.stringify(cart));
+        updateCart();
     }
 
     clearCartButton.addEventListener("click", function () {
