@@ -1,11 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
+  // Fetch products from your API endpoint
+  fetch("https://tff-server.vercel.app/products/getproducts")
+      .then(response => response.json())
+      .then(products => {
+          const productList = document.getElementById("food-menu-list");
+
+          // Loop through the products and create list items for each
+          products.forEach(product => {
 
     const formData = {
-        "product-name": "Pra",
-        "restaurant-name": "Pragash Restaurant",
-        "product-price": 100,
-        "quantity": 10,
-        "product-type": "Noodles",
+        "product-name": product.productName,
+        "restaurant-name": product.restaurantName,
+        "product-price": product.productPrice,
+        "quantity": product.quantity,
+        "product-type": product.productType,
     };
     
     const productname = formData["product-name"];
@@ -53,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         cardBanner.appendChild(image);
         cardBanner.appendChild(badge);
-        cardBanner.appendChild(orderButton);
+        // cardBanner.appendChild(orderButton);
     
         
         const wrapper = document.createElement('div');
@@ -85,12 +93,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const productPrice = document.createElement('data');
         productPrice.classList.add('price', 'product-price');
         productPrice.value = '49.00';
-        productPrice.textContent = productprice;
+        productPrice.textContent = "$"+productprice;
     
         
         const delElement = document.createElement('del');
         delElement.classList.add('del');
-        delElement.textContent = '59.00';
+        delElement.textContent = '$59.00';
     
         
         wrapper.appendChild(category);
@@ -110,9 +118,11 @@ document.addEventListener("DOMContentLoaded", function() {
         
         const menuList = document.getElementById('food-menu-list');
         menuList.appendChild(listItem)
-    
-    
-        
-    }
-    
-    });
+
+              
+      }});
+      })
+      .catch(error => {
+          console.error(error);
+        });
+});

@@ -1,141 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Add Product</title>
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/framework.css" />
-    <link rel="stylesheet" href="css/master.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
-    <!-- favicon-->
-    <link rel="shortcut icon" href="../HomePage/foodie-master/logo.svg" type="image/svg+xml">
-  </head>
-  <body>
-    <div class="page d-flex">
-      <div class="sidebar bg-white p-20 p-relative">
-        <h1>
-          <a href="index.html" class="logo">
-            <img src="../Images/logo.jpg"></a>
-        </h1>
-        <ul>
-          <li>
-            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-              <i class="fa-regular fa-chart-bar fa-fw"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
-              <i class="fa-regular fa-user fa-fw"></i>
-              <span>Profile</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="Products.html">
-              <i class="fa-solid fa-diagram-project fa-fw"></i>
-              <span>Products</span>
-            </a>
-          </li>
-          <li>
-            <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="AddProduct.html">
-              <i class="fa-solid fa-graduation-cap fa-fw"></i>
-              <span>Add Products</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="OrderHistory.html">
-              <i class="fa-regular fa-file fa-fw"></i>
-              <span>Order History</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="content w-full">
-        
-        <h1 class="p-relative">Add Product</h1>
-        <div class="settings p-20 bg-white rad-10 m-20">
 
-          <!-- Start Settings Box -->
-          <div class="p-20 bg-white rad-10">
-            <h2 class="mt-0 mb-10">Product Info</h2>
-            <p class="mt-0 mb-20 c-grey fs-15">General Information About Your Account</p>
-            <form id="productForm">
-              <div class="mb-15">
-                <label class="fs-14 c-grey d-block mb-10" for="first">Product Name</label>
-                <input
-                  class="b-none border-ccc p-10 rad-6 d-block w-full"
-                  type="text"
-                  id="product-name"
-                  placeholder="Product Name"
-                />
-              </div>
-              <div class="mb-15">
-                <label class="fs-14 c-grey d-block mb-5" for="last">Product category</label>
-                <select class="b-none border-ccc p-10 rad-6 d-block w-full" id="product-type" type="text" name="last">
-                  <option value="Rice">Rice & Curry</option>
-                  <option value="FriedRice">Fried Rice</option>
-                  <option value="Noodles">Noodles</option>
-                  <option value="StringHoppers">String Hoppers</option>
-                  <option value="Hoppers">Hoppers</option>
-                  <option value="Koththu">Koththu</option>
-                  <option value="Pizza">Pizza</option>
-                  <option value="Burger">Burger</option>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
 
-                </select>
-              </div>
-              <div class="mb-15">
-                <label class="fs-14 c-grey d-block mb-5" for="last">Restaurant Name</label>
-                <input
-                  class="b-none border-ccc p-10 rad-6 d-block w-full"
-                  id="restaurant-name"
-                  type="text"
-                  placeholder="Restaurant Name"
-                />
-              </div>
-              <div class="mb-15">
-                <label class="fs-14 c-grey d-block mb-5" for="last">Product Price</label>
-                <input
-                  class="b-none border-ccc p-10 rad-6 d-block w-full"
-                  id="product-price"
-                  type="number"
-                  placeholder="Product Price"
-                />
-              </div>
-              <div class="mb-15">
-                <label class="fs-14 c-grey d-block mb-5" for="last">Quantity</label>
-                <input
-                  class="b-none border-ccc p-10 rad-6 d-block w-full"
-                  id="quantity"
-                  type="text"
-                  placeholder="Quantity"
-                />
-              </div>
-              <div>
-                <label class="fs-14 c-grey d-block mb-5" for="email">Image</label>
-                <input
-                  class="email b-none border-ccc p-10 rad-6 w-full mr-10"
-                  id="image"
-                  type="email"
-                  value=""
-                  disabled
-                />
-                <a class="c-blue" href="#">Upload</a>
-              </div>
+<body>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-20 p-relative">
+      <h1>
+        <a href="index.html" class="logo">
+          <img src="../Images/logo.jpg"></a>
+      </h1>
+      <ul>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="Products.html">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span>Products</span>
+          </a>
+        </li>
+        <li>
+          <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="AddProduct.html">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Add Products</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="OrderHistory.html">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Order History</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content w-full">
+
+      <h1 class="p-relative">Add Product</h1>
+      <div class="settings p-20 bg-white rad-10 m-20">
+
+        <!-- Start Settings Box -->
+        <div class="p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Product Info</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">General Information About Your Account</p>
+
+          <form id="productForm">
+            <div class="mb-15">
+              <label class="fs-14 c-grey d-block mb-10" for="productName">Product Name</label>
+              <input class="b-none border-ccc p-10 rad-6 d-block w-full" type="text" id="productName" name="productName"
+                placeholder="Product Name" />
             </div>
-            <button type="submit" id="submit-button">Submit</button>
-          </form>
-          <!-- End Settings Box -->
-
-
+            <div class="mb-15">
+              <label class="fs-14 c-grey d-block mb-5" for="productCategory">Product category</label>
+              <select class="b-none border-ccc p-10 rad-6 d-block w-full" id="productCategory" type="text" name="productCategory">
+                <option value="Rice">Rice & Curry</option>
+                <option value="FriedRice">Fried Rice</option>
+                <option value="Noodles">Noodles</option>
+                <option value="StringHoppers">String Hoppers</option>
+                <option value="Hoppers">Hoppers</option>
+                <option value="Koththu">Koththu</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+              </select>
+            </div>
+            <div class="mb-15">
+              <label class="fs-14 c-grey d-block mb-5" for="restaurantName">Restaurant Name</label>
+              <input class="b-none border-ccc p-10 rad-6 d-block w-full" id="restaurantName" type="text" name="restaurantName"
+                placeholder="Restaurant Name" />
+            </div>
+            <div class="mb-15">
+              <label class="fs-14 c-grey d-block mb-5" for="productPrice">Product Price</label>
+              <input class="b-none border-ccc p-10 rad-6 d-block w-full" id="productPrice" type="number" name="productPrice"
+                placeholder="Product Price" />
+            </div>
+            <div class="mb-15">
+              <label class="fs-14 c-grey d-block mb-5" for="quantity">Quantity</label>
+              <input class="b-none border-ccc p-10 rad-6 d-block w-full" id="quantity" type="number" name="quantity"
+                placeholder="Quantity" />
+            </div>
+            <div>
+              <input class="email b-none border-ccc p-10 rad-6 w-full mr-10" id="imagePath" type="text" value="" name="imagePath"
+                hidden/>
+            </div>
         </div>
+        <input type="submit" id="submit-button">
+        </form>
+        <!-- End Settings Box -->
+
+
       </div>
     </div>
+  </div>
 
-    <script src="js/script.js" defer></script>
-    <script s></script>
-  </body>
+  <script src="js/script.js" defer></script>
+  <script s></script>
+</body>
+
 </html>

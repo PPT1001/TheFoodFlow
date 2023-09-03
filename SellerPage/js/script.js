@@ -1,34 +1,25 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    const submitButton = document.querySelector("#submit-button");
 
-    
-    
-    submitButton.addEventListener("click", function() {
+    const addUserForm = document.getElementById("productForm");
 
-    
+    addUserForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-        const productname = document.querySelector("#product-name").value;
-        alert("Product Name Added");
-        const restaurantname = document.querySelector("#restaurant-name").value;
-        alert("Restaurant Name Added");
-        const productprice = document.querySelector("#product-price").value;
-        alert("Product Price Added");
-        const quantity = document.querySelector("#quantity").value;
-        alert("Product Quantity Added");
-        const producttype = document.querySelector("#product-type").value;
-        alert("Product Type Added");
-        const formData = {
-            "product-name": productname,
-            "restaurant-name": restaurantname,
-            "product-price": productprice,
-            "quantity": quantity,
-            "product-type": producttype,
-        };
+        const formData = new FormData(addUserForm);
+        const userData = Object.fromEntries(formData.entries());
 
-        alert("Form Data Added");
-        createNewProduct(productname, restaurantname, productprice, quantity, producttype);
-        alert("Product Added");
+        const response = await fetch("https://tff-server.vercel.app/products/addproducts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userData),
+        });
+
+        const result = await response.json();
+        console.log(result);
+        alert(result.status);
     });
     
 });
