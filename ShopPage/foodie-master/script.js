@@ -155,7 +155,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const orderBtn = document.getElementsByClassName("add-to-cart");
 
     for (let index = 0; index < orderBtn.length; index++) {
-        alert(index);
         orderBtn[index].addEventListener("click", function () {
             document.getElementById("cart").classList.add("active");
         });
