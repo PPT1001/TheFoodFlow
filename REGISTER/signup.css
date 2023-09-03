@@ -12,10 +12,7 @@ body{
 .back-btn ion-icon:hover{
   color: black;
 }
-@keyframes back{
-  0%{font-size: 40px;}
-  100%{font-size:45px;}
-}
+
 .content-container {
   width: 100%;
   display: flex;
@@ -49,6 +46,10 @@ body{
   
   .content-box-1 h3, .content-box-1 h5{
     margin: 1%;
+  }
+
+  .input-box{
+    padding-left: 20px;
   }
 
  
