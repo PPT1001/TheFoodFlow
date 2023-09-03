@@ -159,17 +159,13 @@ function ready(){
         if (target.classList.contains('add-to-cart')) {
             try {
                 // Log to the console to check if this event handler is being called
-                console.log("Add to Cart clicked");
 
                 const product = target.closest('.food-menu-card').querySelector(".product-name").textContent;
                 const price = parseFloat(target.closest('.food-menu-card').querySelector(".product-price").getAttribute("value"));
 
-                // Log the product and price to ensure they are being retrieved correctly
-                console.log("Product:", product);
-                console.log("Price:", price);
+                // Log the product and price to ensure they are being retrieved correctl
 
-                // Call addToCart function with product and price
-                addToCart(product, price);
+                document.getElementById("cart").classList.add("active");
 
                 addProductToStorage();
 
@@ -183,9 +179,6 @@ function ready(){
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
     const cartTable = document.querySelector("#cart tbody");
     const totalCell = document.querySelector("#total");
-
-
-
 
     const clearCartButton = document.querySelector("#clear-cart");
     const cartIcon = document.getElementsByClassName("search-btn")[0];
@@ -201,24 +194,45 @@ function ready(){
 
     cartIcon.addEventListener("click", function () {
         document.getElementById("cart").classList.add("active");
+        updateCart();
+
     });
+
     cartCloseIcon.addEventListener("click", function () {
         document.getElementById("cart").classList.remove("active");
         document.getElementsByClassName("close-btn")[0].classList.add("activate");
 
     });
 
+    function updateCart(){
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        for (let index = 0; index < cart.length; index++) {
+            const product = cart[index][0];
+            const price = cart[index][1];
+            const quantity = cart[index][2];
+            const subtotal = cart[index][3];
+            const total = cart[index][4];
+            createNewCartRow(product, price, quantity, subtotal, total);
+
+        }
+        updateTotal();
+    }
 
 
     addToCartButtons.forEach(button => {
         button.addEventListener("click", function () {
-            alert("Hello");
             const product = this.parentElement.parentElement.querySelector(".product-name").textContent;
             const price = parseFloat(this.parentElement.parentElement.querySelector(".product-price").getAttribute("value"));
-            addToCart(product, price);
-        
-
+            // addToCart(product, price);
+            localStorage.setItem("product", product);
+            localStorage.setItem("price", price);
+            localStorage.setItem("quantity", 1);
+            
             addProductToStorage();
+            updateCart();
+
+
+            
             
 
         });
@@ -247,6 +261,8 @@ function ready(){
         var bodyCart = document.getElementById("cart");
         localStorage.setItem("product", product);
         localStorage.setItem("price", price);
+
+        
         for (let index = 0; index < document.getElementsByTagName("tr").length; index++) {
             let namee = document.getElementsByTagName("tr")[index].getAttribute("value");
             if (namee == product) {
@@ -275,7 +291,7 @@ function ready(){
         const quantityInput = document.createElement("input");
         quantityInput.type = "number";
         quantityInput.value = 1; // Initial quantity
-        localStorage.setItem("quantity", quantityInput.value);
+        
 
         quantityInput.addEventListener("input", function () {
             updateSubtotal(row, price, parseInt(this.value));
