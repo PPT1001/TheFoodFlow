@@ -180,15 +180,69 @@ function handleMenuClick(event) {
 
             document.getElementById("cart").classList.add("active");
 
+<<<<<<< HEAD
             addProductToStorage(product, price);
             updateCart();
 
         } catch (error) {
             console.error("Error:", error);
+=======
+    }
+
+    cartIcon.addEventListener("click", function () {
+        document.getElementById("cart").classList.add("active");
+
+    });
+
+    cartCloseIcon.addEventListener("click", function () {
+        document.getElementById("cart").classList.remove("active");
+        document.getElementsByClassName("close-btn")[0].classList.add("activate");
+
+    });
+
+    function updateCart(){
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        for (let index = 0; index < cart.length; index++) {
+            const product = cart[index][0];
+            const price = cart[index][1];
+            const quantity = cart[index][2];
+            const subtotal = cart[index][3];
+            const total = cart[index][4];
+            createNewCartRow(product, price, quantity, subtotal, total);
+
+        }
+        updateTotal();
+    }
+
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const product = this.parentElement.parentElement.querySelector(".product-name").textContent;
+            const price = parseFloat(this.parentElement.parentElement.querySelector(".product-price").getAttribute("value"));
+            // addToCart(product, price);
+            localStorage.setItem("product", product);
+            localStorage.setItem("price", price);
+            localStorage.setItem("quantity", 1);
+            
+            addProductToStorage();
+            
+
+        });
+    });
+    
+    function addProductToStorage() {
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        for (let index = 0; index < cart.length; index++) {
+            if (cart[index][0] == localStorage.getItem("product")) {
+                cart.splice(index, 1);
+            }
+>>>>>>> b02dd490b20453807e982a9c7b0fa17e7ed108a1
         }
     }
 }
 
+<<<<<<< HEAD
 function openCart() {
     document.getElementById("cart").classList.add("active");
     updateCart();
@@ -207,6 +261,12 @@ function updateCart() {
     for (let index = 0; index < cart.length; index++) {
         const [product, price, quantity, subtotal, total] = cart[index];
         createNewCartRow(product, price, quantity, subtotal, total);
+=======
+        var arrayCart = [localStorage.getItem("product"), parseInt(localStorage.getItem("price")), parseInt(localStorage.getItem("quantity")), parseInt(localStorage.getItem("subtotal")), parseInt(localStorage.getItem("total"))];
+        cart.push(arrayCart);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCart();
+>>>>>>> b02dd490b20453807e982a9c7b0fa17e7ed108a1
     }
 
     updateTotal();
