@@ -148,6 +148,7 @@ function ready() {
 
             });
         });
+        
     // Define global variables
     const menuList = document.getElementById('food-menu-list');
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
@@ -176,7 +177,7 @@ function ready() {
         if (target.classList.contains('add-to-cart')) {
             try {
                 const product = target.closest('.food-menu-card').querySelector(".product-name").textContent;
-                const price = parseFloat(target.closest('.food-menu-card').querySelector(".product-price").getAttribute("value"));
+                const price = parseFloat(target.closest('.food-menu-card').querySelector(".product-price").textContent.replace("$", ""));
 
                 document.getElementById("cart").classList.add("active");
 
@@ -240,6 +241,7 @@ function ready() {
     function clearCart() {
         cartTable.innerHTML = ""; // Clear the cart table
         localStorage.setItem("cart", "[]"); // Clear the cart data in local storage
+        updateTotal();
     }
 
     function createNewCartRow(product, price, quantity, subtotal, total) {
@@ -354,6 +356,15 @@ function ready() {
             window.location.href = "index.html";
         })
     }
+
+    const buyBtn = document.getElementById("buy-now");
+    buyBtn.addEventListener("click", function () {
+        if (localStorage.getItem("is-loggedin-cus")) {
+            window.location.href = "checkout.html";
+        } else {
+            window.location.href = "../../LoginPage/login.html";
+        }
+    });
 
 
 
