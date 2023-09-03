@@ -141,11 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
     const cartTable = document.querySelector("#cart tbody");
     const totalCell = document.querySelector("#total");
-    if (totalCell.innerHTML == 0) {
-        var storage = [];
-        storage = JSON.stringify(storage);
-        localStorage.setItem("cart", storage);
-    }
+
 
 
 
@@ -175,27 +171,27 @@ document.addEventListener("DOMContentLoaded", function () {
             const product = this.parentElement.parentElement.querySelector(".product-name").textContent;
             const price = parseFloat(this.parentElement.parentElement.querySelector(".product-price").getAttribute("value"));
             addToCart(product, price);
+        
 
-            var cart = localStorage.getItem("cart");
-            cart = JSON.parse(cart);
-
-            for (var i = 0; i < cart.length; i++){
-                cart[i][0] = cart[i][0].replace(/"/g, "");
-            }
-            
-            var arrayCart = [localStorage.getItem("product"), parseInt(localStorage.getItem("price")), parseInt(localStorage.getItem("quantity")), parseInt(localStorage.getItem("subtotal")), parseInt(localStorage.getItem("total"))];
-            arrayCart = JSON.stringify(arrayCart);
-
-            cart = cart+arrayCart;
-            
-            cart = JSON.stringify(cart);
-            localStorage.setItem("cart", cart);
-
+            addProductToStorage();
             
 
         });
     });
     
+    function addProductToStorage() {
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        for (let index = 0; index < cart.length; index++) {
+            if (cart[index][0] == localStorage.getItem("product")) {
+                cart.splice(index, 1);
+            }
+        }
+
+        var arrayCart = [localStorage.getItem("product"), parseInt(localStorage.getItem("price")), parseInt(localStorage.getItem("quantity")), parseInt(localStorage.getItem("subtotal")), parseInt(localStorage.getItem("total"))];
+        cart.push(arrayCart);
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
 
     clearCartButton.addEventListener("click", function () {
         clearCart();
