@@ -255,8 +255,15 @@ function ready() {
         const quantityInput = document.createElement("input");
         quantityInput.type = "number";
         quantityInput.value = quantity;
+        quantityInput.min = 1;
+        quantityInput.max = document.getElementById("max-quantity").textContent;
+
+        if (quantity > parseInt(quantityInput.max)) {
+            quantityInput.value = parseInt(quantityInput.max);
+        }
 
         quantityInput.addEventListener("input", function () {
+
             updateSubtotal(row, price, parseInt(this.value));
             updateTotal();
         });
