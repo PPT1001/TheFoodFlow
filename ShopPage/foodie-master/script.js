@@ -38,7 +38,7 @@ function ready() {
                 const formData = {
                     "product-name": product.productName,
                     "restaurant-name": "- " + product.restaurantName,
-                    "product-price": "$" + product.productPrice,
+                    "product-price": "Rs." + product.productPrice,
                     "quantity": product.quantity,
                     "product-type": product.productCategory,
                 };
@@ -71,7 +71,7 @@ function ready() {
                     image.width = 300;
                     image.height = 300;
                     image.loading = 'lazy';
-                    image.alt = "Wendy's Chicken";
+                    image.alt = producttype;
                     image.classList.add('w-100');
 
 
@@ -131,13 +131,13 @@ function ready() {
 
                     const productPrice = document.createElement('data');
                     productPrice.classList.add('price', 'product-price');
-                    productPrice.value = '49.00';
+                    productPrice.value = String(productprice);
                     productPrice.textContent = productprice;
 
 
                     const delElement = document.createElement('del');
                     delElement.classList.add('del');
-                    delElement.textContent = '$59.00';
+                    delElement.textContent = "Rs." + product.productPrice;
 
 
                     wrapper.appendChild(category);
@@ -192,7 +192,7 @@ function ready() {
         if (target.classList.contains('add-to-cart')) {
             try {
                 const product = target.closest('.food-menu-card').querySelector(".product-name").textContent;
-                const price = parseFloat(target.closest('.food-menu-card').querySelector(".product-price").textContent.replace("$", ""));
+                const price = parseFloat(target.closest('.food-menu-card').querySelector(".product-price").textContent.replace("Rs.", ""));
 
                 document.getElementById("cart").classList.add("active");
 
@@ -285,10 +285,10 @@ function ready() {
         quantityCell.appendChild(quantityInput);
 
         const priceCell = document.createElement("td");
-        priceCell.textContent = "$" + price.toFixed(2);
+        priceCell.textContent = "Rs." + price.toFixed(2);
 
         const subtotalCell = document.createElement("td");
-        subtotalCell.textContent = "$" + subtotal.toFixed(2);
+        subtotalCell.textContent = "Rs." + subtotal.toFixed(2);
 
         const removeCell = document.createElement("td");
         const removeButton = document.createElement("button");
@@ -316,7 +316,7 @@ function ready() {
     function updateSubtotal(row, price, quantity) {
         const newSubtotal = price * quantity;
         const subtotalCell = row.querySelector("td:nth-child(4)");
-        subtotalCell.textContent = "$" + newSubtotal.toFixed(2);
+        subtotalCell.textContent = "Rs." + newSubtotal.toFixed(2);
 
         // Update the cart data in local storage
         const product = row.getAttribute("value");
@@ -336,11 +336,11 @@ function ready() {
         let total = 0;
 
         allSubtotalCells.forEach(subtotalCell => {
-            total += parseFloat(subtotalCell.textContent.replace("$", ""));
+            total += parseFloat(subtotalCell.textContent.replace("Rs.", ""));
         });
 
         localStorage.setItem("total", total);
-        totalCell.textContent = "$" + total.toFixed(2);
+        totalCell.textContent = "Rs." + total.toFixed(2);
 
         if (total === 0) {
             localStorage.removeItem("cart"); // Remove cart data from local storage if it's empty
