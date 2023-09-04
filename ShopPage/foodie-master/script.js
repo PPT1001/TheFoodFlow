@@ -362,6 +362,20 @@ function ready() {
         document.getElementById("User-icon").addEventListener("click", function () {
             window.location.href = "index.html";
         })
+
+        const listItem = document.createElement('li');
+        listItem.classList.add('nav-item');
+        const link = document.createElement('a');
+        link.classList.add('navbar-link');
+        link.textContent = 'Logout';
+        listItem.appendChild(link);
+
+        document.getElementById('navbar-list').appendChild(listItem);
+        link.addEventListener("click", function () {
+            localStorage.removeItem("is-loggedin-cus");
+            window.location.href = "index.html";
+            console.log("User Logged Out");
+        });
     }
 
     const buyBtn = document.getElementById("buy-now");
