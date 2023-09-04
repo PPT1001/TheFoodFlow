@@ -194,10 +194,10 @@ function ready() {
             try {
                 const product = target.closest('.food-menu-card').querySelector(".product-name").textContent;
                 const price = parseFloat(target.closest('.food-menu-card').querySelector(".product-price").textContent.replace("Rs.", ""));
+                const maxQuantity = parseInt(target.closest('.food-menu-card').querySelector(".badge").textContent);
 
                 document.getElementById("cart").classList.add("active");
-
-                addProductToStorage(product, price);
+                addProductToStorage(product, price, maxQuantity);
                 updateCart();
 
             } catch (error) {
@@ -222,34 +222,21 @@ function ready() {
         cartTable.innerHTML = ""; // Clear the cart table
 
         for (let index = 0; index < cart.length; index++) {
-            const [product, price, quantity, subtotal, total] = cart[index];
-            createNewCartRow(product, price, quantity, subtotal, total);
+            const [product, price, quantity, subtotal, total, quantityMax] = cart[index];
+            createNewCartRow(product, price, quantity, subtotal, total, quantityMax);
         }
 
         updateTotal();
     }
 
-    addToCartButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            const product = this.parentElement.parentElement.querySelector(".product-name").textContent;
-            const price = parseFloat(this.parentElement.parentElement.querySelector(".product-price").getAttribute("value"));
 
-            localStorage.setItem("product", product);
-            localStorage.setItem("price", price);
-            localStorage.setItem("quantity", 1);
-
-            addProductToStorage(product, price);
-            updateCart();
-        });
-    });
-
-    function addProductToStorage(product, price) {
+    function addProductToStorage(product, price, quantityMax) {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         // Remove existing item from the cart with the same product
         cart = cart.filter(item => item[0] !== product);
 
-        const arrayCart = [product, price, 1, price, price];
+        const arrayCart = [product, price, 1, price, price, quantityMax];
         cart.push(arrayCart);
         localStorage.setItem("cart", JSON.stringify(cart));
     }
@@ -260,7 +247,7 @@ function ready() {
         updateTotal();
     }
 
-    function createNewCartRow(product, price, quantity, subtotal, total) {
+    function createNewCartRow(product, price, quantity, subtotal, total, quantityMax) {
         const row = document.createElement("tr");
         row.setAttribute("value", product);
 
@@ -272,7 +259,8 @@ function ready() {
         quantityInput.type = "number";
         quantityInput.value = quantity;
         quantityInput.min = 1;
-        quantityInput.max = document.getElementById("max-quantity").textContent;
+        quantityInput.max = quantityMax;
+
 
         if (quantity > parseInt(quantityInput.max)) {
             quantityInput.value = parseInt(quantityInput.max);
