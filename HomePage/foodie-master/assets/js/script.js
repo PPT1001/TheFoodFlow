@@ -89,7 +89,7 @@ if (localStorage.getItem("is-loggedin-sup")) {
   document.getElementById("User-icon").appendChild(userIcon);
   userIcon.classList.add("user-icon");
   document.getElementById("User-icon").addEventListener("click", function() {
-    window.location.href = "../../../../SellerPage/index.html";
+    window.location.href = "../../SellerPage/index.html";
   });
 }
 
