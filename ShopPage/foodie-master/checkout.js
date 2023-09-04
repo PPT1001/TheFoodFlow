@@ -8,7 +8,7 @@ else {
 // ready function
 
 function ready() {
-    document.getElementById("total").innerHTML = "$ "+localStorage.getItem('total') || 0;
+    document.getElementById("total").innerHTML = "Rs. "+localStorage.getItem('total') || 0;
 
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     for (let i = 0; i < cart.length; i++) {
@@ -29,7 +29,7 @@ function creatRow(item) {
     // Create the product name element
     const productName = document.createElement("h6");
     productName.classList.add("my-0");
-    productName.textContent = item[0]+" ($ "+item[1]+")";
+    productName.textContent = item[0]+" (Rs. "+item[1]+")";
 
     // Create the description element
     const description = document.createElement("small");
@@ -43,7 +43,7 @@ function creatRow(item) {
     // Create the right span element for the price
     const priceSpan = document.createElement("span");
     priceSpan.classList.add("text-muted");
-    priceSpan.textContent = "$ "+item[3];
+    priceSpan.textContent = "Rs. "+item[3];
 
     // Append the left div and right span to the list item
     listItem.appendChild(leftDiv);
