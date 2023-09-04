@@ -87,7 +87,8 @@
 
                     
                     <hr class="mb-4">
-                    <input class="btn btn-lg btn-block custom-btn" value="Proceed to Checkout" type="submit" style="background-color: rgb(38, 190, 38); color: white;"></input>
+                    <input class="btn btn-lg btn-block custom-btn" value="Proceed to Checkout" type="submit" style="background-color: rgb(38, 190, 38); color: white;">
+                    <button class="btn btn-lg btn-block custom-btn" onclick="conFunction()"> Cancel </button>
                 </form>
             </div>
         </div>
@@ -107,6 +108,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function conFunction(){
+            let text = "Are you sure you want to cancel the order?";
+            if (confirm(text) == true){
+                window.open("index.html")
+            }
+        }
+    </script>
 </body>
 </html>
  
