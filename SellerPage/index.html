@@ -75,7 +75,7 @@
               <div>2500 <span class="d-block c-grey fs-14 mt-10">Orders</span></div>
               <div>$8500 <span class="d-block c-grey fs-14 mt-10">Earned</span></div>
             </div>
-            <a href="#" class="visit d-block fs-14 bg-blue c-white w-fit btn-shape">Logout</a>
+            <a href="#" class="visit d-block fs-14 bg-blue c-white w-fit btn-shape" id="logout-btn">Logout</a>
           </div>
           <!-- End Welcome Widget -->
 
@@ -250,5 +250,14 @@
         <!-- End Projects Table -->
       </div>
     </div>
+    <a href=""></a>
+
+    <script>
+      document.getElementById("logout-btn").addEventListener("click", function() {
+        localStorage.removeItem("is-loggedin-sup");
+        window.location.href = "../HomePage/foodie-master/index.html";
+        console.log("User Logged Out");
+      });
+    </script>
   </body>
 </html>

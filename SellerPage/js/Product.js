@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  var Images = {
+    "Rice" : "../Images/Food Images/Rice.png",
+    "Burger" : "../../Images/Food Images/Burger.png",
+    "Pizza" : "../Images/Food Images/Pizza.png",
+    "String Hoppers" : "../../Images/Food Images/String Hoppers.png",
+    "Noodles" : "../Images/Food Images/Noodles.png",
+    "Fried Rice": "../Images/Food Images/Fried Rice.png",
+    "Koththu": "../Images/Food Images/Koththu.png",
+    "Hoppers": "../../Images/Food Images/Hoppers.png",
+    "Kiribath": "../../Images/Food Images/Kiribath.png",
+    "Salad": "../../Images/Food Images/Salad.png",
+  };
+
   // Fetch products from your API endpoint
   fetch("https://tff-server.vercel.app/products/getproducts")
       .then(response => response.json())
@@ -13,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "restaurant-name": product.restaurantName,
         "product-price": product.productPrice,
         "quantity": product.quantity,
-        "product-type": product.productType,
+        "product-type": product.productCategory,
     };
-    
+
     const productname = formData["product-name"];
     const restaurantname = formData["restaurant-name"];
     const productprice = formData["product-price"];
@@ -40,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
         
         const image = document.createElement('img');
-        image.src = './assets/images/food-menu-6.png';
+        image.src = Images[producttype];
         image.width = 300;
         image.height = 300;
         image.loading = 'lazy';
