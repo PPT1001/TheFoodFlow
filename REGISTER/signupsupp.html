@@ -25,24 +25,24 @@
                 <h5>Already have an account ? <a href="../LoginPage/login.html">SIGN IN</a></h5>
             </div>
             <div class="section-B">
-                <form id="signup-form-sup" name="recForm" onsubmit="return validaterec()">
+                <form id="signup-form-sup" name="recForm">
                     <label for="name">Full Name:</label><br>
-                    <input class ="input-box" type="text" id="name" name="name" placeholder="Eg: Thefoodflow"><br><br>
+                    <input class ="input-box" type="text" id="name" name="name" placeholder="Eg: Thefoodflow" required><br><br>
 
-                    <label for="orgName">Orphanage/ Home:</label><br>
-                    <input class ="input-box" type="text" id="orgName" name="orgName" placeholder="Eg: Thefoodflow"><br><br>
+                    <label for="orgName">Restaurant Name:</label><br>
+                    <input class ="input-box" type="text" id="orgName" name="orgName" placeholder="Eg: Thefoodflow" required><br><br>
 
                     <label for="email">Email:</label><br>
-                    <input class ="input-box" type="email" id="email" name="email" placeholder="Eg: Thefoodflow@gmail.com"><br><br>
+                    <input class ="input-box" type="email" id="email" name="email" placeholder="Eg: Thefoodflow@gmail.com" required><br><br>
 
                     <label for="mobileNumber">Mobile Number:</label><br>
-                    <input class ="input-box" type="number" id="mobileNumber" name="mobileNumber" placeholder="Eg: 0112562564"><br><br>
+                    <input class ="input-box" type="number" id="mobileNumber" name="mobileNumber" placeholder="Eg: 0112562564" required><br><br>
 
                     <label for="passwordHash">Password: </label><br>
-                    <input class ="input-box" type="password" id="passwordHash" name="passwordHash" placeholder="Eg: ABC_1234"><br><br>
+                    <input class ="input-box" type="password" id="passwordHash" name="passwordHash" placeholder="Eg: ABC_1234" required><br><br>
 
                     <label for="Cpassword">Confirm Password:</label><br>
-                    <input class ="input-box" type="password" id="Cpassword" name="Cpassword" placeholder="Eg: ABC_1234"><br><br>
+                    <input class ="input-box" type="password" id="Cpassword" name="Cpassword" placeholder="Eg: ABC_1234" required><br><br>
                     <div class="submit-btn">
                         <input type="submit" value="Submit" class="submit-btn">
                     </div>
@@ -63,58 +63,5 @@
 
     <script src="../REGISTER/form-sup.js"></script>
 
-<script>
-    function validaterec(){
-        var Fname = document.recForm.name.value;
-        var OrName = document.recForm.orgName.value;
-        var Email= document.recForm.email.value;
-        var atposition=Email.indexOf("@");  
-        var dotposition=Email.lastIndexOf(".");  
-        var Mnum = document.recForm.mobileNumber.value;
-        var pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
-        var password = document.recForm.passwordHash.value;
-        var cpassword = document.recForm.Cpassword.value;
-        var filter1 = /[a-zA-Z]/g;
-        var filter2 = /[@$,<>#:?_*&;]/g;
-        var filter3 = /[0-9]/g;
-  
-        if(Fname==null || Fname=="" ){
-            alert("Full Name is required");
-            return false;
-        }
-        else if(!isNaN(Fname)){
-            alert("Enter only character in Full Name");
-            return false; 
-        }
-        else if(OrName==null || OrName=="" ){
-            alert(" Orphanage/ Home name is required");
-            return false;
-        }
-        else if(!isNaN(OrName)){
-            alert("Enter only character in Orphanage/ Home"); 
-            return false;
-        }
-        else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=Email.length){  
-            alert("Enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
-            return false;  
-        }
-        else if(isNaN(Mnum) || Mnum =="" || Mnum==null || Mnum.length !=10){  
-            alert("Enter a valid Mobile Number");
-            return false;  
-        }
-        else if(password==null || password ==""){
-            alert("Password is required");
-            return false;
-        }
-         else if (!(password.match(filter1) && password.match(filter2) && password.match(filter1) && password.match(filter3)) ){
-                alert("Invalid password");
-                return false;
-        }
-        else if(password !=cpassword || cpassword==null || cpassword==""){
-            alert("confirm password does not match");
-            return false;
-        }
-    }
-</script>
 </body>
 </html>
