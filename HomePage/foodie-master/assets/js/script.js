@@ -103,6 +103,20 @@ if (localStorage.getItem("is-loggedin-cus")) {
   userIcon.style.fontSize = '40px';
   document.getElementById("User-icon").appendChild(userIcon);
   userIcon.classList.add("user-icon");
+
+  const listItem = document.createElement('li');
+  listItem.classList.add('nav-item');
+  const link = document.createElement('a');
+  link.classList.add('navbar-link');
+  link.textContent = 'Logout';
+  listItem.appendChild(link);
+
+  document.getElementById('navbar-list').appendChild(listItem);
+  link.addEventListener("click", function () {
+    localStorage.removeItem("is-loggedin-cus");
+    window.location.href = "index.html";
+    console.log("User Logged Out");
+  });
   document.getElementById("User-icon").addEventListener("click", function () {
       window.location.href = "../../ShopPage/foodie-master/index.html";
   })
