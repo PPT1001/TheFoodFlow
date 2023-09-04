@@ -137,7 +137,8 @@ function ready() {
 
                     const delElement = document.createElement('del');
                     delElement.classList.add('del');
-                    delElement.textContent = "Rs." + product.productPrice;
+                    let del = parseFloat(product.productPrice)*2;
+                    delElement.textContent = "Rs." + del;
 
 
                     wrapper.appendChild(category);
