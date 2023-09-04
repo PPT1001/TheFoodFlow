@@ -2,15 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   var Images = {
     "Rice" : "../Images/Food Images/Rice.png",
-    "Burger" : "../../Images/Food Images/Burger.png",
+    "Burger" : "../Images/Food Images/Burger.png",
     "Pizza" : "../Images/Food Images/Pizza.png",
-    "String Hoppers" : "../../Images/Food Images/String Hoppers.png",
+    "String Hoppers" : ".../Images/Food Images/String Hoppers.png",
     "Noodles" : "../Images/Food Images/Noodles.png",
     "Fried Rice": "../Images/Food Images/Fried Rice.png",
     "Koththu": "../Images/Food Images/Koththu.png",
-    "Hoppers": "../../Images/Food Images/Hoppers.png",
-    "Kiribath": "../../Images/Food Images/Kiribath.png",
-    "Salad": "../../Images/Food Images/Salad.png",
+    "Hoppers": "../Images/Food Images/Hoppers.png",
+    "Kiribath": "../Images/Food Images/Kiribath.png",
+    "Salad": "../Images/Food Images/Salad.png",
   };
 
   // Fetch products from your API endpoint
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         image.width = 300;
         image.height = 300;
         image.loading = 'lazy';
-        image.alt = "Wendy's Chicken";
+        image.alt = producttype;
         image.classList.add('w-100');
     
         
