@@ -85,7 +85,7 @@
             <div class="mb-15">
               <label class="fs-14 c-grey d-block mb-5" for="restaurantName">Restaurant Name</label>
               <input class="b-none border-ccc p-10 rad-6 d-block w-full" id="restaurantName" type="text" name="restaurantName"
-                placeholder="Restaurant Name" />
+                placeholder="Restaurant Name" disabled/>
             </div>
             <div class="mb-15">
               <label class="fs-14 c-grey d-block mb-5" for="productPrice">Product Price</label>
@@ -114,6 +114,8 @@
   <script src="js/script.js" defer></script>
   <script s></script>
   <script>
+    document.getElementById("restaurantName").value = localStorage.getItem("restaurantName");
+    document.getElementById("restaurantName").placeholder = localStorage.getItem("restaurantName");
     document.getElementById("logout-btn").addEventListener("click", function() {
       localStorage.removeItem("is-loggedin-sup");
       window.location.href = "../HomePage/foodie-master/index.html";
