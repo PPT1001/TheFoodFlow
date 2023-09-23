@@ -252,5 +252,12 @@
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById("logout-btn").addEventListener("click", function() {
+        localStorage.removeItem("is-loggedin-sup");
+        window.location.href = "../HomePage/foodie-master/index.html";
+        console.log("User Logged Out");
+      });
+    </script>
   </body>
 </html>
