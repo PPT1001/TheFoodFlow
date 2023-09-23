@@ -45,7 +45,7 @@
   -->
   <header class="header" data-header>
     <div class="container">
-    
+
       <h1>
         <a href="./foodie-master/index.html" class="logo">
           <img src="../Images/logo.jpg"></a>
@@ -82,9 +82,9 @@
       </nav>
 
       <div class="header-btn-group">
-    
-      <form action="../REGISTER/packages.html" id="User-icon">
-        <button class="btn btn-hover" id="signup-btn">Signup</a>
+
+        <form action="../REGISTER/packages.html" id="User-icon">
+          <button class="btn btn-hover" id="signup-btn">Signup</a>
           </button>
         </form>
         <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
@@ -95,69 +95,199 @@
       </div>
     </div>
   </header>
-  
+
   <br><br><br><br> <br>
-    <div class="contact">
-      <div class="content">
-        <div class="left-side">
-          <center>
+  <div class="contact">
+    <div class="content">
+      <div class="left-side">
+        <center>
           <div class="facebook details">
             <center><ion-icon name="logo-facebook"></ion-icon></center>
-               <div class ="text-one"><a href ="https://www.facebook.com/people/The-FoodFlow/61550351533404/">Facebook</a></div>
+            <div class="text-one"><a href="https://www.facebook.com/people/The-FoodFlow/61550351533404/">Facebook</a>
+            </div>
           </div>
           <div class="twitter details">
-            <center><ion-icon name="logo-twitter"></ion-icon></center>       
-               <div class ="text-one"><a href ="https://twitter.com/The_FoodFlow">Twitter</a></div>
+            <center><ion-icon name="logo-twitter"></ion-icon></center>
+            <div class="text-one"><a href="https://twitter.com/The_FoodFlow">Twitter</a></div>
           </div>
           <div class="instagram details">
-            <center><ion-icon name="logo-instagram"></ion-icon></center>            
-            <div class ="text-one"><a href ="https://www.instagram.com/the.foodflow/">Instagram</a></div>
+            <center><ion-icon name="logo-instagram"></ion-icon></center>
+            <div class="text-one"><a href="https://www.instagram.com/the.foodflow/">Instagram</a></div>
           </div>
           <div class="phone details">
-            <center><ion-icon name="call-outline"></ion-icon></center>            
-            <div class ="text-one"><a href="tel:+94771922950">+94771922950</a></div>
+            <center><ion-icon name="call-outline"></ion-icon></center>
+            <div class="text-one"><a href="tel:+94771922950">+94771922950</a></div>
           </div>
           <div class="email details">
-            <center><ion-icon name="mail-outline"></ion-icon></center>           
-            <div class ="text-one"><a href="mailto: help.foodflow@gmail.com">help.foodflow@gmail.com</a></div>
+            <center><ion-icon name="mail-outline"></ion-icon></center>
+            <div class="text-one"><a href="mailto: help.foodflow@gmail.com">help.foodflow@gmail.com</a></div>
           </div>
-          </center>
-        </div>
-        <dic class="right-side">
-          <div class="topic-text"> Send us message</div>
-          <p style="font-family: 'Rubik',sans-serif;"> <br><br>If you any concerns you can send message here.</p>
-            <br>
-          <form action="#popup1" border ="1px">
-            <div class="input-box">
-              <input type="text" placeholder="Enter your name" required>
-            </div><br>
-            <div class="input-box">
-              <input type="email" placeholder="Enter your Email" required>
-            </div><br>
-            <div class="input-box">
-              <input type="text" placeholder="Enter your Organization" required>
-            </div><br>
-            <div class="input-box message-box">
-              <textarea placeholder="Enter your message"></textarea>
-            </div>
-            <br>
-            <button class="btn btn-hover" ><font color="white">Send Now</font></button>
-            <div id="popup1" class="overlay">
-              <div class="popup">
-                <h2>Email Sent!</h2>
-                <a class="close" href="#">&times;</a>
-                <div class="content">
-                  Thank you for cosult us. We will contact you within 24 hours.                </div>              </div>
-            </div>
-          </form>
-        </div>
+        </center>
       </div>
+      <dic class="right-side">
+        <div class="topic-text"> Send us message</div>
+        <p style="font-family: 'Rubik',sans-serif;"> <br><br>If you any concerns you can send message here.</p>
+        <br>
+        <form action="#popup1" border="1px">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" required>
+          </div><br>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your Email" required>
+          </div><br>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your Organization" required>
+          </div><br>
+          <div class="input-box message-box">
+            <textarea placeholder="Enter your message"></textarea>
+          </div>
+          <br>
+          <button class="btn btn-hover">
+            <font color="white">Send Now</font>
+          </button>
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2>Email Sent!</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Thank you for cosult us. We will contact you within 24 hours. </div>
+            </div>
+          </div>
+        </form>
     </div>
+  </div>
+  </div>
 
-    <script src="./foodie-master/assets/js/script.js" defer></script>
-    
+
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
-  </html>
+  <script>
+    'use strict';
+
+
+
+    /**
+     * navbar toggle
+     */
+
+    const navbar = document.querySelector("[data-navbar]");
+    const navbarLinks = document.querySelectorAll("[data-nav-link]");
+    const menuToggleBtn = document.querySelector("[data-menu-toggle-btn]");
+
+    menuToggleBtn.addEventListener("click", function () {
+      navbar.classList.toggle("active");
+      this.classList.toggle("active");
+    });
+
+    for (let i = 0; i < navbarLinks.length; i++) {
+      navbarLinks[i].addEventListener("click", function () {
+        navbar.classList.toggle("active");
+        menuToggleBtn.classList.toggle("active");
+      });
+    }
+
+
+
+    /**
+     * header sticky & back to top
+     */
+
+    const header = document.querySelector("[data-header]");
+    const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY >= 100) {
+        header.classList.add("active");
+        backTopBtn.classList.add("active");
+      } else {
+        header.classList.remove("active");
+        backTopBtn.classList.remove("active");
+      }
+    });
+
+
+
+
+
+
+
+    /**
+     * move cycle on scroll
+     */
+
+    const deliveryBoy = document.querySelector("[data-delivery-boy]");
+
+    let deliveryBoyMove = -80;
+    let lastScrollPos = 0;
+
+    window.addEventListener("scroll", function () {
+
+      let deliveryBoyTopPos = deliveryBoy.getBoundingClientRect().top;
+
+      if (deliveryBoyTopPos < 500 && deliveryBoyTopPos > -250) {
+        let activeScrollPos = window.scrollY;
+
+        if (lastScrollPos < activeScrollPos) {
+          deliveryBoyMove += 1;
+        } else {
+          deliveryBoyMove -= 1;
+        }
+
+        lastScrollPos = activeScrollPos;
+        deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
+      }
+
+    });
+
+
+
+
+    if (localStorage.getItem("is-loggedin-sup")) {
+      document.getElementById("login-btn").remove();
+      document.getElementById("signup-btn").remove();
+      // document.createElement("a").innerHTML = "Logout"; 
+      const userIcon = document.createElement("ion-icon");
+      userIcon.name = "person-circle-outline";
+      userIcon.style.color = 'hsl(120, 100%, 25%)';
+      userIcon.style.fontSize = '80px';
+      document.getElementById("User-icon").appendChild(userIcon);
+      userIcon.classList.add("user-icon");
+      document.getElementById("User-icon").addEventListener("click", function () {
+        window.location.href = "../../SellerPage/index.html";
+      });
+    }
+
+    if (localStorage.getItem("is-loggedin-cus")) {
+      document.getElementById("login-btn").remove();
+      document.getElementById("signup-btn").remove();
+      // document.createElement("a").innerHTML = "Logout"; 
+      const userIcon = document.createElement("ion-icon");
+      userIcon.name = "person-circle-outline";
+      userIcon.style.color = 'hsl(120, 100%, 25%)';
+      userIcon.style.fontSize = '40px';
+      document.getElementById("User-icon").appendChild(userIcon);
+      userIcon.classList.add("user-icon");
+
+      const listItem = document.createElement('li');
+      listItem.classList.add('nav-item');
+      const link = document.createElement('a');
+      link.classList.add('navbar-link');
+      link.textContent = 'Logout';
+      listItem.appendChild(link);
+
+      document.getElementById('navbar-list').appendChild(listItem);
+      link.addEventListener("click", function () {
+        localStorage.removeItem("is-loggedin-cus");
+        window.location.href = "contact.html";
+        console.log("User Logged Out");
+      });
+      document.getElementById("User-icon").addEventListener("click", function () {
+        window.location.href = "../../ShopPage/foodie-master/index.html";
+      })
+    }
+
+  </script>
+</body>
+
+</html>

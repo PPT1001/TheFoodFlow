@@ -53,7 +53,7 @@ if (localStorage.getItem("is-loggedin-cus")) {
   document.getElementById('navbar-list').appendChild(listItem);
   link.addEventListener("click", function () {
     localStorage.removeItem("is-loggedin-cus");
-    window.location.href = "index.html";
+    window.location.href = "blog.html";
     console.log("User Logged Out");
   });
 }
