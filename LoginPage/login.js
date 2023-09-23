@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (result.status === "Login successful") {
             localStorage.setItem("is-loggedin-cus", true);
-            localStorage.setItem("is-loggedin-sup", false);
+            // localStorage.setItem("is-loggedin-sup", false);
             window.location.href = "../ShopPage/foodie-master/index.html";
         }
     });   

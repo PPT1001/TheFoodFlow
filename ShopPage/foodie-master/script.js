@@ -387,7 +387,12 @@ function ready() {
         if (localStorage.getItem("is-loggedin-cus")) {
             window.location.href = "checkout.html";
         } else {
+            if (localStorage.getItem("is-loggedin-sup")) {
+                window.location.href = "../../../../SellerPage/index.html";
+                alert("Log out as a admin and try again");
+            } else {
             window.location.href = "../../LoginPage/login.html";
+            }
         }
     });
 

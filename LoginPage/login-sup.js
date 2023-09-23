@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (result.status === "Login successful") {
             localStorage.setItem("is-loggedin-sup", true);
-            localStorage.setItem("is-loggedin-cus", false);
+            // localStorage.setItem("is-loggedin-cus", false);
             window.location.href = "../SellerPage/index.html";
         }
     });

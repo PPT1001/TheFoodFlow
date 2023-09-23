@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
         var is_not_validated = validaterec();
 
         if (is_not_validated) {
-            alert("Form is validated");
 
             event.preventDefault();
 
