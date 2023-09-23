@@ -18,10 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const result = await response.json();
         console.log(result);
         alert(result.status);
+        alert(result.orgName);
 
 
         if (result.status === "Login successful") {
             localStorage.setItem("is-loggedin-sup", true);
+            localStorage.setItem("restaurantName", result.orgName);
             // localStorage.setItem("is-loggedin-cus", false);
             window.location.href = "../SellerPage/index.html";
         }
