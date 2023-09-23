@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const result = await response.json();
         console.log(result);
         alert(result.status);
-        alert(result.orgName);
 
 
         if (result.status === "Login successful") {

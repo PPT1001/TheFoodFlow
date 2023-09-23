@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (result.status === "Admin Added as a Admin") {
                 localStorage.setItem("is-loggedin-sup", true);
+                localStorage.setItem("restaurantName", document.recForm.orgName.value);
                 window.location.href = "../SellerPage/index.html";
             }
 
