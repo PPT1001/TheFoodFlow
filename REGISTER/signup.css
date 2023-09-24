@@ -180,3 +180,14 @@ body{
   background-color: rgb(19, 57, 19) ;
 
 }
+/* Default styles */
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .content-container {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+  .content-box-2 {
+      display: none; /* Hide the image container on smaller screens */
+  }
+}
