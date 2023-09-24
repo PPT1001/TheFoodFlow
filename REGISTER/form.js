@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             alertText.textContent = message;
             customAlert.style.display = "block";
+            document.getElementById("overlay").style.display = "block";
         }
 
         // Function to close the custom alert

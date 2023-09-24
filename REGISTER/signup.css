@@ -151,7 +151,8 @@ body{
     background-color: #fff;
     border: 1px solid black;
     border-radius: 10px;
-    width: 300px;    
+    width: 300px;  
+    z-index: 10; 
 }
 
 /* Style for the overlay */
@@ -163,16 +164,19 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    
 }
 .Ok{
-  background-color: rgb(38, 190, 38) !important;
-  color: white !important;
+  background-color: rgb(38, 190, 38) ;
+  color: white ;
   margin-top: 10px;
   border: none;
   width: 40px;
   height: 40px;
+  border-radius: 10px;
+  margin-left: 250px;
 }
 .Ok:hover{
-  background-color: rgb(19, 57, 19) !important;
+  background-color: rgb(19, 57, 19) ;
 
 }
