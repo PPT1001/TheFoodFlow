@@ -342,37 +342,3 @@ i{
 }
 
 
-/* Toggle Button */
-
-.navbarList {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    border: 1px solid green;
-    padding: 10px;
-    list-style-type: none;
-    width: 100%;
-    font-size: 20px;
-    text-align: center; /* Center content horizontally */
-    line-height: 40px; /* Adjust this value to center content vertically */
-}
-
-
-.navbarList.active {
-    display: block;
-}
-
-.navbarList.active li {
-    border-bottom: 1px solid green;
-}
-
-.navbarList.active li a {
-    color: green;
-    text-decoration: none;
-}
-
-.navbarList.active li a:hover {
-    background-color: lightgreen;
-}
