@@ -49,7 +49,9 @@ function ready() {
                 const quantity = formData["quantity"];
                 const producttype = formData["product-type"];
 
-                createNewProduct(productname, restaurantname, productprice, quantity, producttype);
+                if (quantity != 0) {
+                    createNewProduct(productname, restaurantname, productprice, quantity, producttype);
+                }
 
 
                 function createNewProduct(productname, restaurantname, productprice, quantity, producttype) {
