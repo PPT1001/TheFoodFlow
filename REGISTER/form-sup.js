@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const result = await response.json();
             console.log(result.status);
-            alert(result.status);
+            showAlert(result.status);
 
 
             if (result.status === "Admin Added as a Admin") {

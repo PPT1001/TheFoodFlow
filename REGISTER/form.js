@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var is_not_validated = validaterec();
 
         if (is_not_validated) {
-            alert("Form is validated");
+            showAlert("Form is validated");
 
         event.preventDefault();
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const result = await response.json();
         console.log(result.status);
-        alert(result.status);
+        showAlert(result.status);
 
         if (result.status === "Customer Added as a Customer") {
             localStorage.setItem("is-loggedin-cus", true);
