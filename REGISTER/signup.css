@@ -191,12 +191,4 @@ body{
       display: none; /* Hide the image container on smaller screens */
   }
 }
-@media (max-width: 768px) {
-  .custom-alert {
-    width: 200px;
-  }
-  .ok{
-    margin-left: 150px;
 
-  }
-}
