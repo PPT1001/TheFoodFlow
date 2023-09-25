@@ -585,6 +585,7 @@ body.active { overflow: hidden; }
 }
 
 .hero {
+  margin-top: 50px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1361,7 +1362,7 @@ textarea.input-field {
 .back-top-btn.active {
   opacity: 1;
   visibility: visible;
-  transform: translateY(-10px);
+  transform: translateY(-50px);
 }
 
 .back-top-btn:is(:hover, :focus) { background-color: var(--rich-black-fogra-29); }
@@ -1454,6 +1455,7 @@ textarea.input-field {
    */
 
   .hero {
+    min-height: 600px;
     position: relative;
     text-align: left;
     overflow: hidden;
@@ -1764,6 +1766,8 @@ textarea.input-field {
   .back-top-btn {
     bottom: 20px;
     right: 30px;
+    
+    
   }
 
 }
@@ -1790,7 +1794,10 @@ textarea.input-field {
    * HERO
    */
 
-  .hero { min-height: 770px; }
+  .hero { 
+    min-height: 770px;
+    padding-top: 100px;
+   }
 
 
 
