@@ -173,7 +173,7 @@ main {
 @media screen and (max-width: 768px) {
     
     .login{
-        width: 130%;
+        width: 90%;
         align-items: center;    }
 
     .design {
@@ -181,11 +181,11 @@ main {
     }
     .text-input {
         align-items: center;
-        width: 75%;
-        padding-right: 150px;
+        width: 100%;
     }
     .create{
-        padding-left: 75px;
+        align-items: center;
+        text-align: center;
     }
 
 }
