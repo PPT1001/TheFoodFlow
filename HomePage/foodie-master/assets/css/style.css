@@ -493,7 +493,6 @@ body.active { overflow: hidden; }
   font-family: var(--ff-rubik);
   font-weight: var(--fw-500);
   padding: 10px 15px;
-  
   letter-spacing: 0;
   visibility: visible;
   /* transition: var(--transition-1); */
@@ -1393,7 +1392,10 @@ textarea.input-field {
     display: block;
     --bg-color: var(--dark-orange);
   }
-  
+
+  .navbar-login {
+  margin-left: 25px;
+}
 }
 
 

@@ -242,7 +242,7 @@ i{
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     padding: 10px 15px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     /* transition: var(--transition-1); */
   }
   
@@ -256,6 +256,10 @@ i{
   }
   
 @media screen and (min-width: 700px) {
+
+    .navbar-login {
+        margin-left: 25px;
+    }
 
     .trending-news-box{
         flex-direction: row;
