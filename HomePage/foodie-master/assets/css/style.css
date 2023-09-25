@@ -1434,7 +1434,17 @@ textarea.input-field {
 
 
 
+@media (min-width: 360px) {
 
+  /**
+   * REUSED STYLE
+   */
+
+  .container { 
+    max-width: 360px;
+    /* width: 100%; */
+  }
+}
 
 /**
  * responsive for larger than 768px screen
@@ -1446,7 +1456,9 @@ textarea.input-field {
    * REUSED STYLE
    */
 
-  .container { max-width: 720px; }
+  .container { 
+    max-width: 45em; 
+  }
 
 
 
