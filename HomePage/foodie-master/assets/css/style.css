@@ -448,7 +448,7 @@ body.active { overflow: hidden; }
 }
 
 .navbar.active {
-  height: 236px;
+  height: 285px;
   visibility: visible;
 }
 
