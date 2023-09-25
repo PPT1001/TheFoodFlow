@@ -27,10 +27,12 @@ var Images = {
 
 function ready() {
 
+
     fetch("https://tff-server.vercel.app/products/getproducts")
         .then(response => response.json())
         .then(products => {
             const productList = document.getElementById("food-menu-list");
+
 
             // Loop through the products and create list items for each
             products.forEach(product => {
@@ -197,6 +199,7 @@ function ready() {
                 const product = target.closest('.food-menu-card').querySelector(".product-name").textContent;
                 const price = parseFloat(target.closest('.food-menu-card').querySelector(".product-price").textContent.replace("Rs.", ""));
                 const maxQuantity = parseInt(target.closest('.food-menu-card').querySelector(".badge").textContent);
+                document.getElementById("overlay").style.display = "block";
 
                 document.getElementById("cart").classList.add("active");
                 addProductToStorage(product, price, maxQuantity);
@@ -216,6 +219,8 @@ function ready() {
     function closeCart() {
         document.getElementById("cart").classList.remove("active");
         document.getElementsByClassName("close-btn")[0].classList.add("activate");
+        document.getElementById("overlay").style.display = "none";
+
     }
 
     function updateCart() {
