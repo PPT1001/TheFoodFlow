@@ -185,6 +185,7 @@ body{
 @media screen and (max-width: 767px) {
   .content-container {
       flex-direction: column; /* Stack sections vertically on smaller screens */
+      align-items: center;
   }
   .content-box-2 {
       display: none; /* Hide the image container on smaller screens */
