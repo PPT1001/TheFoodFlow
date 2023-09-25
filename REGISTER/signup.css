@@ -180,10 +180,9 @@ body{
   background-color: rgb(19, 57, 19) ;
 
 }
-/* Default styles */
 
 /* Styles for screens smaller than 768px */
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .content-container {
       flex-direction: column; /* Stack sections vertically on smaller screens */
   }
@@ -192,6 +191,9 @@ body{
   }
   .content-box-1{
     width: 90%;
+  }
+  .content-container {
+    margin-top: 30px;
   }
 
 }
