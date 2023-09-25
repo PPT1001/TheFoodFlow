@@ -4,7 +4,6 @@
     border-radius: 6px;
     padding: 20px 50px 30px 50px;
     box-shadow: 0 5px 10px black;
-    margin-left: 180px;
 }
 .contact .content{
     display: flex;
@@ -51,7 +50,6 @@
 }
 .contact .content .right-side{
     width:50%;
-    margin-left: 75px;
     align-items: center;
     justify-items: center;
     color: black;
@@ -66,7 +64,6 @@
 .right-side .input-box{
     height: 50px;
     width: 100%;
-    margin: 12 0;
 }
 .right-side{
   font-family: 'Rubik',sans-serif;
@@ -193,32 +190,25 @@
 /* CSS for smaller screens */
 @media screen and (max-width: 767px) {
   .contact {
-    flex-direction: column;
     align-items: center;
-    margin-left: 60px;
-  }
-
-  .left-side {
-    width: 100%;
-  }
-
-  .right-side {
-    width: 100%;
-    font-size: 12px;
+    text-align: center;
+    margin-left: 0;
   }
   .right-side .input-box input,
   .right-side .input-box textarea{
-    font-size: 10px;
-    width: 120%;
+    width: 100%;
   }
   .content .left-side .details .text-one,
 .content .left-side .details .text-two{
-  font-size: 10px;
-}
+  display: none;}
+
 .content .left-side .details ion-icon{
-  font-size: 20px;
+display: none;}
+.contact .content .right-side{
+  width: 280%;
+  padding: 0%;
+  margin: 0%;
+  left: 0%;
 }
 
-
 }
-

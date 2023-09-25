@@ -578,11 +578,11 @@ body.active { overflow: hidden; }
 
 /*-----------------------------------*\
   #HERO
-\*-----------------------------------*/
+\*-----------------------------------
 
 .hero-banner { 
   display: none; 
-}
+}*/
 
 .hero {
   margin-top: 50px;
@@ -1846,4 +1846,9 @@ textarea.input-field {
 
 .section2-title {
   padding-bottom: 140px;
+}
+@media screen and (max-width:767px){
+  #top{
+    max-width: 750px;
+  }
 }
