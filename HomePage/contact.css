@@ -64,7 +64,6 @@
 .right-side .input-box{
     height: 50px;
     width: 100%;
-    margin: 12 0;
 }
 .right-side{
   font-family: 'Rubik',sans-serif;
@@ -206,9 +205,10 @@
 .content .left-side .details ion-icon{
 display: none;}
 .contact .content .right-side{
-  width: 200%;
+  width: 280%;
   padding: 0%;
   margin: 0%;
+  left: 0%;
 }
 
 }
