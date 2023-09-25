@@ -19,6 +19,7 @@ for (let i = 0; i < navbarLinks.length; i++) {
   navbarLinks[i].addEventListener("click", function () {
     navbar.classList.toggle("active");
     menuToggleBtn.classList.toggle("active");
+    
   });
 }
 
@@ -107,6 +108,7 @@ if (localStorage.getItem("is-loggedin-cus")) {
   const listItem = document.createElement('li');
   listItem.classList.add('nav-item');
   const link = document.createElement('a');
+  link.setAttribute("data-nav-link");
   link.classList.add('navbar-link');
   link.textContent = 'Logout';
   listItem.appendChild(link);
