@@ -196,6 +196,19 @@ body{
   .content-container {
     margin-top: 30px;
   }
-
+  
 }
+/* CSS for smaller screens */
+@media screen and (max-width: 767px) {
+  .responsive-list {
+    display: block; /* Display list items one by one */
+  }
+
+  /* Adjust spacing between list items if needed */
+  .promo-item {
+    margin-bottom: 20px; /* Add margin to separate list items */
+  }
+}
+
+
 

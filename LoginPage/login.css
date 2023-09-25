@@ -136,7 +136,8 @@ main {
     margin-left: 90px;
     font-weight: bold;
 }
-.login input[type=submit]:hover {
+.login input[type=submit]:hover,
+.login-btn:hover {
     background-color: black;
   }
 
@@ -159,7 +160,7 @@ main {
     margin-left: 10px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .logincontainer {
         grid-template-columns: 50% 50%;
         grid-template-areas: "design login";
@@ -168,6 +169,25 @@ main {
     .design {
         display: block;
     }
+}
+@media screen and (max-width: 768px) {
+    
+    .login{
+        width: 130%;
+        align-items: center;    }
+
+    .design {
+        display: none;
+    }
+    .text-input {
+        align-items: center;
+        width: 75%;
+        padding-right: 150px;
+    }
+    .create{
+        padding-left: 75px;
+    }
+
 }
 .custom-alert {
     display: none;
