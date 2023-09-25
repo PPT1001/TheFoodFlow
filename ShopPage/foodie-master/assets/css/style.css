@@ -927,9 +927,21 @@ textarea.input-field {
 }
 
 
+@media (max-width: 992px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 720px; }
+
+  .section .container{
+    margin-top: 100px;
+  }
 
 
 
+}
 /**
  * responsive for larger than 768px screen
  */

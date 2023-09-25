@@ -31,32 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// LOGIN PAGE
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+const menuToggleBtn = document.querySelector("[data-menu-toggle-btn]");
 
-/*=============== SHOW HIDDEN - PASSWORD ===============*/
-// const showHiddenPass = (loginPass, loginEye) =>{
-//     const input = document.getElementById(loginPass),
-//           iconEye = document.getElementById(loginEye)
-  
-//     iconEye.addEventListener('click', () =>{
-//        // Change password to text
-//        if(input.type === 'password'){
-//           // Switch to text
-//           input.type = 'text'
-  
-//           // Icon change
-//           iconEye.classList.add('ri-eye-line')
-//           iconEye.classList.remove('ri-eye-off-line')
-//        } else{
-//           // Change to password
-//           input.type = 'password'
-  
-//           // Icon change
-//           iconEye.classList.remove('ri-eye-line')
-//           iconEye.classList.add('ri-eye-off-line')
-//        }
-//     })
-//   }
-  
-//   showHiddenPass('login-pass','login-eye')
-  
+menuToggleBtn.addEventListener("click", function () {
+  navbar.classList.toggle("active");
+  this.classList.toggle("active");
+});
+
+for (let i = 0; i < navbarLinks.length; i++) {
+  navbarLinks[i].addEventListener("click", function () {
+    navbar.classList.toggle("active");
+    menuToggleBtn.classList.toggle("active");
+    
+  });
+}
