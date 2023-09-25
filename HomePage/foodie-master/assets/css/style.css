@@ -339,6 +339,10 @@ body.active { overflow: hidden; }
 /* .navbar, */
 .header-btn-group .btn { display: none; }
 
+#signup-btn {
+  display: block;
+}
+
 .header {
   --color: var(--white);
   --btn-color: black;
