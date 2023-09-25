@@ -152,3 +152,72 @@
       width: 70%;
     }
   }
+  /* CSS for larger screens 
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-side {
+    width: 50%;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+  .right-side .input-box{
+    width: 100%;}
+}
+
+/* CSS for smaller screens 
+@media screen and (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+  .right-side .input-box{
+    width: 100%;}
+}
+
+
+/* CSS for smaller screens */
+@media screen and (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .right-side {
+    width: 100%;
+    font-size: 12px;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    font-size: 10px;
+  }
+  .content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 10px;
+}
+.content .left-side .details ion-icon{
+  font-size: 20px;
+}
+
+
+}
+
