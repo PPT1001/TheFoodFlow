@@ -177,12 +177,12 @@ main {
     }
     
     .login{
-        width: 100%;
+        width: 150%;
         align-items: center;    }
     .login .title{
         text-align: center;
         align-items: center;
-    }
+        padding: 0px;    }
 
 
     .design {
