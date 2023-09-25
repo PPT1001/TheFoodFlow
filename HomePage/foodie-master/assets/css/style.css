@@ -1848,7 +1848,7 @@ textarea.input-field {
   padding-bottom: 140px;
 }
 @media screen and (max-width:767px){
-  .container{
+  #top{
     max-width: 750px;
   }
 }
