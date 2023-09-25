@@ -190,5 +190,9 @@ body{
   .content-box-2 {
       display: none; /* Hide the image container on smaller screens */
   }
+  .content-box-1{
+    width: 90%;
+  }
+
 }
 

@@ -209,6 +209,7 @@
   .right-side .input-box input,
   .right-side .input-box textarea{
     font-size: 10px;
+    width: 120%;
   }
   .content .left-side .details .text-one,
 .content .left-side .details .text-two{
