@@ -53,7 +53,7 @@
       <div class="content w-full">
         
         <h1 class="p-relative">Products</h1>
-        <a href="#" class="center-flex d-block fs-20 bg-blue c-white w-100 btn-shape log-btn2" id="logout-btn" style="width: 100px;">Logout</a>
+        <a href="#" class="center-flex d-block fs-20 bg-blue c-white w-100 btn-shape log-btn2" id="logout-btn2" style="width: 100px;">Logout</a>
         <div class="courses-page d-grid m-20 gap-20 container">
           <ul class="food-menu-list" id="food-menu-list">
           </ul> 
@@ -65,6 +65,12 @@
     <script src="js/Product.js"></script>
     <script>
       document.getElementById("logout-btn").addEventListener("click", function() {
+        localStorage.removeItem("is-loggedin-sup");
+        window.location.href = "../HomePage/foodie-master/index.html";
+        console.log("User Logged Out");
+      });
+
+      document.getElementById("logout-btn2").addEventListener("click", function() {
         localStorage.removeItem("is-loggedin-sup");
         window.location.href = "../HomePage/foodie-master/index.html";
         console.log("User Logged Out");
