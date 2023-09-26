@@ -107,6 +107,21 @@
           <i class="ri-arrow-right-fill"></i>
         </div>
         </form>
+        <div class="custom-alert" id="customAlert">
+          <p id="alertText"></p>
+          <div class="okbutton"><button class="Ok" onclick="closeAlert()">OK</button></div>
+      </div>
+      <script>
+           function closeAlert() {
+              var customAlert = document.getElementById("customAlert");
+              customAlert.style.display = "none";
+              document.getElementById("overlay").style.display = "none";
+          }
+
+      </script>
+  
+      <!-- Overlay -->
+      <div class="overlay" id="overlay"></div>
       </div>
     </div>
   </main>
@@ -213,16 +228,24 @@
 
   </footer>
   <script>
+    function showAlert(message) {
+            var customAlert = document.getElementById("customAlert");
+            var alertText = document.getElementById("alertText");
+
+            alertText.textContent = message;
+            customAlert.style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
     function validate(){
     var username = document.loginform.email.value;
     var password = document.loginform.passwordHash.value;
 
     if(username==null || username=="" ){
-            alert("User Name is required");
+            showAlert("User Name is required");
             return false;
         }
         else if(password==null || password==""){
-            alert("password is required");
+            showAlert("password is required");
             return false; 
         }
     }

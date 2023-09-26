@@ -177,8 +177,10 @@ body{
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  margin-left: 350px;
   cursor: pointer;
+}
+.okbutton{
+  float: right;
 }
 .Ok:hover{
   background-color: rgb(19, 57, 19) ;
@@ -221,6 +223,10 @@ body{
   /* Adjust spacing between list items if needed */
   .promo-item {
     margin-bottom: 20px; /* Add margin to separate list items */
+  }
+  .custom-alert{
+      max-width:300px ;
+  
   }
 }
 
