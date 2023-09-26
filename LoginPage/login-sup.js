@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const result = await response.json();
         console.log(result);
-        alert(result.status);
+        showAlert(result.status);
 
 
         if (result.status === "Login successful") {
@@ -28,7 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 })
+function showAlert(message) {
+  var customAlert = document.getElementById("customAlert");
+  var alertText = document.getElementById("alertText");
 
+  alertText.textContent = message;
+  customAlert.style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}
 
 
 const navbar = document.querySelector("[data-navbar]");

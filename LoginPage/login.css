@@ -218,6 +218,12 @@ main {
         align-items: center;
         text-align: center;
     }
+    .custom-alert{
+        max-width:350px ;
+    }
+    .okbutton{
+        text-align: right;
+    }
 
 }
 .custom-alert {
@@ -252,10 +258,12 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  margin-left: 300px;
   cursor: pointer;
 }
-.Ok:hover{
+.okbutton{
+float: right;}
+
+  .Ok:hover{
   background-color: rgb(19, 57, 19) ;
 
 }
