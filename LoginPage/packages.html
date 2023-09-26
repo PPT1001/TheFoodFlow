@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/HomePage/foodie-master/logo.svg" type="image/svg+xml">
 
     <link rel="stylesheet" type="text/css" href="../HomePage/foodie-master/assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./signup.css" />
+    <link rel="stylesheet" type="text/css" href="../REGISTER/signup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
@@ -65,9 +65,8 @@
 
       <div class="header-btn-group">
         
-      <form action="../REGISTER/packages.html">
-        <button class="btn btn-hover">Signup</a>
-          </button>
+        <form action="../../REGISTER/packages.html" id="User-icon">
+          <button class="btn btn-hover" id="signup-btn">Signup</button>
         </form>
         <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
           <span class="line top"></span>
@@ -80,7 +79,7 @@
   </header>
         
     <section class="section section-divider white promo" id="promo">
-        <div class="container">
+        <div class="container ">
 
           <h2 class="h2 section-title">
             Choose <span class="span">  Account</span>
@@ -91,9 +90,10 @@
           <br>
           <br>
 
-          <ul height="200px" width="200px" class="promo-list has-scrollbar">
-            <a href="../LoginPage/login-sup.html">
-            <li  class="promo-item">
+          <ul height="200px" width="200px" class="promo-list has-scrollbar rowitem responsive-list">
+            <li  class="promo-item">            
+              <a href="../LoginPage/login-sup.html">
+
               <div class="promo-card">
             
 
@@ -105,11 +105,12 @@
 
                 <img src="../Images/re.jpg" width="100" height="100" loading="lazy" alt="Maxican Pizza"
                   class="w-100 card-banner">
-                </div>
+                </div></a>
                 </li>
-                </a>
-            <a href="../LoginPage/login.html">
+                
             <li class="promo-item">
+              <a href="../LoginPage/login.html">
+
               <div class="promo-card">
                
 
@@ -122,9 +123,9 @@
                 <img src="../Images/donate.jpg" width="100" height="100" loading="lazy" alt="French Fry"
                   class="w-100 card-banner">
 
-              </div>
+              </div></a>
             </li>
-            </a>
+            
           </ul>
 
         </div>

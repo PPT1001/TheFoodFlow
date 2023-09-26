@@ -1,5 +1,13 @@
+#signup-btn {
+    display: block;
+  }
+
 header{
     background-color: white;
+}
+
+.header {
+    position: fixed;
 }
 
 main {
@@ -81,7 +89,6 @@ main {
     display: flex;
     flex-direction: column;
     position: relative;
-    background: white;
     justify-content: center;
 }
 
@@ -136,7 +143,8 @@ main {
     margin-left: 90px;
     font-weight: bold;
 }
-.login input[type=submit]:hover {
+.login input[type=submit]:hover,
+.login-btn:hover {
     background-color: black;
   }
 
@@ -159,7 +167,7 @@ main {
     margin-left: 10px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .logincontainer {
         grid-template-columns: 50% 50%;
         grid-template-areas: "design login";
@@ -168,6 +176,49 @@ main {
     .design {
         display: block;
     }
+}
+@media screen and (max-width: 768px) {
+    .login-btn {
+        width: 100%;
+        padding: 10px;
+        color: white;
+        background: linear-gradient(109.6deg, hsl(120, 100%, 25%) 11.2%, hsl(120, 100%, 75%) 91.1%);
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 0;
+        font-weight: bold;
+    }
+
+    .logincontainer{
+        width: 80%;
+        align-items: center;
+    }
+    
+    .login{
+        width: 100%;
+        align-items: center;    }
+    .login h3.title{
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+        padding: 0px;    
+    }
+
+
+    .design {
+        display: none;
+    }
+    .text-input {
+        align-items: center;
+        width: 100%;
+    }
+    .create{
+        align-items: center;
+        text-align: center;
+    }
+
 }
 .custom-alert {
     display: none;

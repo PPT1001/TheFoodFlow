@@ -337,6 +337,9 @@ body.active { overflow: hidden; }
 /* .navbar, */
 .header-btn-group .btn { display: none; }
 
+#signup-btn {
+  display: block;
+}
 .header {
   --color: var(--white);
   --btn-color: black;
@@ -447,7 +450,7 @@ body.active { overflow: hidden; }
 }
 
 .navbar.active {
-  height: 236px;
+  height: 285px;
   visibility: visible;
 }
 
@@ -479,7 +482,7 @@ body.active { overflow: hidden; }
   font-family: var(--ff-rubik);
   font-weight: var(--fw-500);
   padding: 10px 15px;
-  margin-left: 25px;
+  /* margin-left: 25px; */
   /* transition: var(--transition-1); */
 }
 
@@ -883,6 +886,10 @@ textarea.input-field {
     display: block;
     --bg-color: var(--dark-orange);
   }
+
+  .navbar-login {
+    margin-left: 25px;
+  }
   
 }
 
@@ -927,9 +934,21 @@ textarea.input-field {
 }
 
 
+@media (max-width: 992px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 720px; }
+
+  .section .container{
+    margin-top: 100px;
+  }
 
 
 
+}
 /**
  * responsive for larger than 768px screen
  */
@@ -1511,4 +1530,14 @@ th {
 button {
   display: inline-block; /* Makes the buttons appear inline */
   margin-right: 10px; /* Adds some spacing between the buttons */
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  
 }

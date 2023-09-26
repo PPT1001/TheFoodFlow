@@ -339,6 +339,10 @@ body.active { overflow: hidden; }
 /* .navbar, */
 .header-btn-group .btn { display: none; }
 
+#signup-btn {
+  display: block;
+}
+
 .header {
   --color: var(--white);
   --btn-color: black;
@@ -448,7 +452,7 @@ body.active { overflow: hidden; }
 }
 
 .navbar.active {
-  height: 236px;
+  height: 285px;
   visibility: visible;
 }
 
@@ -489,7 +493,6 @@ body.active { overflow: hidden; }
   font-family: var(--ff-rubik);
   font-weight: var(--fw-500);
   padding: 10px 15px;
-  margin-left: 25px;
   letter-spacing: 0;
   visibility: visible;
   /* transition: var(--transition-1); */
@@ -576,21 +579,26 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
+/*-----------------------------------
   #HERO
-\*-----------------------------------*/
+\*-----------------------------------
 
 .hero-banner { 
   display: none; 
-}
+} */
+
+.hero-banner { 
+  display: none; 
+} 
+
 
 .hero {
+  margin-top: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   /* padding-block: 145px 60px; */
   text-align: center;
-  height: 100vh;
 }
 
 .hero-subtitle {
@@ -693,7 +701,10 @@ body.active { overflow: hidden; }
   #ABOUT
 \*-----------------------------------*/
 
-.about { text-align: center; }
+.about { 
+  text-align: center; 
+  padding-block: 30px;
+}
 
 .about-banner {
   position: relative;
@@ -708,7 +719,9 @@ body.active { overflow: hidden; }
 .about-banner .abs-img {
   top: 0;
   left: 100px;
+  display: none;
 }
+
 
 .about .section-title {
   max-width: 15ch;
@@ -1361,7 +1374,7 @@ textarea.input-field {
 .back-top-btn.active {
   opacity: 1;
   visibility: visible;
-  transform: translateY(-10px);
+  transform: translateY(-50px);
 }
 
 .back-top-btn:is(:hover, :focus) { background-color: var(--rich-black-fogra-29); }
@@ -1384,11 +1397,26 @@ textarea.input-field {
    * HEADER
    */
 
+   .hero {
+    margin-top: 50px;
+    height: 100vh;
+   }
+
+   .abs-img {
+    display: block;
+   }
+
   .header-btn-group .btn {
     display: block;
     --bg-color: var(--dark-orange);
   }
-  
+
+  .navbar-login {
+  margin-left: 25px;
+}
+.about { 
+  padding-block: 60px;
+}
 }
 
 
@@ -1445,7 +1473,7 @@ textarea.input-field {
    * REUSED STYLE
    */
 
-  .container { max-width: 720px; }
+  .container { max-width: 100%; }
 
 
 
@@ -1454,6 +1482,7 @@ textarea.input-field {
    */
 
   .hero {
+    min-height: 600px;
     position: relative;
     text-align: left;
     overflow: hidden;
@@ -1764,6 +1793,8 @@ textarea.input-field {
   .back-top-btn {
     bottom: 20px;
     right: 30px;
+    
+    
   }
 
 }
@@ -1790,7 +1821,10 @@ textarea.input-field {
    * HERO
    */
 
-  .hero { min-height: 770px; }
+  .hero { 
+    min-height: 770px;
+    padding-top: 100px;
+   }
 
 
 
@@ -1839,4 +1873,10 @@ textarea.input-field {
 
 .section2-title {
   padding-bottom: 140px;
+}
+@media screen and (max-width:767px){
+  .delivery-banner{
+    display: none;
+  }
+  
 }
