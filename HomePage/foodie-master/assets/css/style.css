@@ -579,22 +579,26 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
+/*-----------------------------------
   #HERO
 \*-----------------------------------
 
 .hero-banner { 
   display: none; 
-}*/
+} */
+
+.hero-banner { 
+  display: none; 
+} 
+
 
 .hero {
-  margin-top: 50px;
+  margin-top: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   /* padding-block: 145px 60px; */
   text-align: center;
-  height: 100vh;
 }
 
 .hero-subtitle {
@@ -697,7 +701,10 @@ body.active { overflow: hidden; }
   #ABOUT
 \*-----------------------------------*/
 
-.about { text-align: center; }
+.about { 
+  text-align: center; 
+  padding-block: 30px;
+}
 
 .about-banner {
   position: relative;
@@ -712,7 +719,9 @@ body.active { overflow: hidden; }
 .about-banner .abs-img {
   top: 0;
   left: 100px;
+  display: none;
 }
+
 
 .about .section-title {
   max-width: 15ch;
@@ -1388,6 +1397,15 @@ textarea.input-field {
    * HEADER
    */
 
+   .hero {
+    margin-top: 50px;
+    height: 100vh;
+   }
+
+   .abs-img {
+    display: block;
+   }
+
   .header-btn-group .btn {
     display: block;
     --bg-color: var(--dark-orange);
@@ -1395,6 +1413,9 @@ textarea.input-field {
 
   .navbar-login {
   margin-left: 25px;
+}
+.about { 
+  padding-block: 60px;
 }
 }
 
