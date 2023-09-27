@@ -148,6 +148,7 @@
     .popup{
       width: 70%;
     }
+
   }
   /* CSS for larger screens 
 @media screen and (min-width: 768px) {
@@ -193,6 +194,11 @@
     align-items: center;
     text-align: center;
     margin-left: 0;
+    width: 75%;
+    background-image:  hsl(0, 0%, 93%);
+    border-radius: 6px;
+    padding: 20px 0px;
+    box-shadow: 0 5px 10px black;
   }
   .right-side .input-box input,
   .right-side .input-box textarea{
@@ -209,6 +215,23 @@ display: none;}
   padding: 0%;
   margin: 0%;
   left: 0%;
+}
+
+.content .right-side .topic-text{
+  text-align: start;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: 'Roboto',sans-serif;
+  color: hsl(28, 100%, 58%);
+}
+
+.text-msg {
+  text-align: start;
+}
+
+.form-fields {
+  width: 90%;
+
 }
 
 }
