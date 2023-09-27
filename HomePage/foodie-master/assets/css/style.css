@@ -1822,11 +1822,15 @@ textarea.input-field {
    */
 
   .hero { 
-    min-height: 770px;
-    padding-top: 100px;
+    max-height: 690px;
+    /* padding-top: 100px; */
    }
 
-
+   .hero-banner img{
+    width: 90%;
+    margin-top: 11%;
+    margin-left: 80px;
+   }
 
   /**
    * PROMO
