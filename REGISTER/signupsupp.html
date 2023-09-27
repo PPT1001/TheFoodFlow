@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="signup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <title>The FoodFlow | Supplier Registration</title>
     <!-- favicon-->
     <link rel="shortcut icon" href="../HomePage/foodie-master/logo.svg" type="image/svg+xml">
@@ -27,33 +27,40 @@
             <div class="section-B">
                 <form id="signup-form-sup" name="recForm">
                     <label for="name">Full Name:</label><br>
-                    <input class ="input-box" type="text" id="name" name="name" placeholder="Eg: Thefoodflow" ><br><br>
+                    <input class="input-box" type="text" id="name" name="name"
+                        placeholder="&nbsp &nbsp Eg: Thefoodflow"><br><br>
 
                     <label for="orgName">Restaurant Name:</label><br>
-                    <input class ="input-box" type="text" id="orgName" name="orgName" placeholder="Eg: Thefoodflow" ><br><br>
+                    <input class="input-box" type="text" id="orgName" name="orgName"
+                        placeholder="&nbsp &nbsp Eg: Thefoodflow"><br><br>
 
                     <label for="email">Email:</label><br>
-                    <input class ="input-box" type="email" id="email" name="email" placeholder="Eg: Thefoodflow@gmail.com" ><br><br>
+                    <input class="input-box" type="email" id="email" name="email"
+                        placeholder="&nbsp &nbsp Eg: Thefoodflow@gmail.com"><br><br>
 
                     <label for="mobileNumber">Mobile Number:</label><br>
-                    <input class ="input-box" type="number" id="mobileNumber" name="mobileNumber" placeholder="Eg: 0112562564" ><br><br>
+                    <input class="input-box" type="number" id="mobileNumber" name="mobileNumber"
+                        placeholder="&nbsp &nbsp Eg: 0112562564"><br><br>
 
                     <label for="passwordHash">Password: </label><br>
-                    <input class ="input-box" type="password" id="passwordHash" name="passwordHash" placeholder="Eg: ABC_1234" ><br><br>
+                    <input class="input-box" type="password" id="passwordHash" name="passwordHash"
+                        placeholder="&nbsp &nbsp Eg: ABC_1234"><br><br>
 
                     <label for="Cpassword">Confirm Password:</label><br>
-                    <input class ="input-box" type="password" id="Cpassword" name="Cpassword" placeholder="Eg: ABC_1234" ><br><br>
+                    <input class="input-box" type="password" id="Cpassword" name="Cpassword"
+                        placeholder="&nbsp &nbsp Eg: ABC_1234"><br><br>
                     <div class="submit-btn">
                         <input type="submit" value="Submit" class="submit-btn">
                     </div>
-                    
+                    <input type="submit" value="Submit" id="submit-btn">
+
                 </form>
                 <div class="custom-alert" id="customAlert">
                     <p id="alertText"></p>
                     <div class="okbutton"><button class="Ok" onclick="closeAlert()">OK</button></div>
                 </div>
                 <script>
-                     function closeAlert() {
+                    function closeAlert() {
                         var customAlert = document.getElementById("customAlert");
                         customAlert.style.display = "none";
                         document.getElementById("overlay").style.display = "none";
@@ -61,25 +68,26 @@
                     }
 
                 </script>
-            
+
                 <!-- Overlay -->
                 <div class="overlay" id="overlay"></div>
-            
-            </div>
-            </div>
-        </div>
-        <div class="content-box-2">
-            <div class="image-container">
+
             </div>
         </div>
     </div>
-    
-  <!--ionicon link-->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="content-box-2">
+        <div class="image-container">
+        </div>
+    </div>
+    </div>
+
+    <!--ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
     <script src="../REGISTER/form-sup.js"></script>
 
 </body>
+
 </html>
