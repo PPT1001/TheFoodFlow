@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const formData = new FormData(addUserForm);
         const userData = Object.fromEntries(formData.entries());
 
-        const response = await fetch("https://tff-server.vercel.app/customers/login", {
+        const response = await fetch("https://food-flow-backend.vercel.app/customers/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -28,7 +28,7 @@ var Images = {
 function ready() {
 
 
-    fetch("https://tff-server.vercel.app/products/getproducts")
+    fetch("https://food-flow-backend.vercel.app/products/getproducts")
         .then(response => response.json())
         .then(products => {
             const productList = document.getElementById("food-menu-list");

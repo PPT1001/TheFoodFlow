@@ -61,7 +61,7 @@ function ready() {
 
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-            const response = await fetch("https://tff-server.vercel.app/products/placeorder", {
+            const response = await fetch("https://food-flow-backend.vercel.app/products/placeorder", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
